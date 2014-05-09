@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="img/mfdc.png" alt="MFDC loves you, or at least doesn't actively want you to die" width="250"/>
+</p>
+
 The Momsronomicon
 =================
 A concise and (not) complete list of the procedures, advice, tips and miscellany of [Mom's Friendly Development Company](http://mfdc.biz).
