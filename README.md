@@ -455,3 +455,6 @@ TODO
 * Basecamp Inc. how to speak to clients
 * Design process Inc. Balsamiq
 * Useful libraries: Waveform, Joyst
+* Makefile instructions
+* Cpanel - temporary subdomains and main accounts
+* PHP - Positives and Negatives
