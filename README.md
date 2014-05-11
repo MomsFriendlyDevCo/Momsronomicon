@@ -129,6 +129,28 @@ Unbreakable rules with projects:
 * You may see folds in existing code these resemble three opening or closing braces e.g. `Some code {{{ ... }}}`. These are flags to a text editor that the text between the braces should be grouped with a labeling comment. This is helpful to gather large related blocks of code together and make the source code more readable.
 
 
+PHP
+---
+PHP is one of the two major programming languages at MFDC (the other being the front-end JavaScript code). While likely to change in the future (to NodeJS), PHP remains with us as our primary development language.
+
+Ok lets get the bad things out of the way to start with. There are [lots of faults with PHP](https://maurus.net/resources/programming-languages/php) but lets just concentrate on those that effect us as a company and you as a dev:
+
+* [Functions, parameters and return values are inconsistantly named](http://tnx.nl/php.html#args), not in a constistant style or just plain suck - PHP suffers majorly from this issue. Is it [Needle, Haystack](http://au1.php.net/manual/en/function.explode.php) or [Haystack, Needle](http://au1.php.net/manual/en/function.strpos.php), is it [Compound function names](http://au1.php.net/manual/en/function.isset.php) or [Underscores](http://au1.php.net/manual/en/function.is-array.php). The language is a mess.
+* Object Orientation is just **bad** - While classical OO techniques such as inheritence do exist, more modern techniques such as introspection or [Duck Punching](https://en.wikipedia.org/wiki/Duck_punching) are plain unsupported.
+* The PHP organisation committee appear to be taking whatever the opposite of LSD is - something that makes you increasingly more boring and pedantic. Their rejection of some perfectly sensible additions to the language is [nothing short](https://wiki.php.net/rfc/keywords_as_identifiers) of [baffling](https://wiki.php.net/rfc/named_params).
+
+
+And now for the good news:
+
+* PHP is extremely easy to learn if you have a rough background in *any other* language.
+* It is entirely output agnostic allowing you to output HTML just as easily as JSON, XML, [images](http://au1.php.net/manual/en/book.image.php) or even [Flash](http://au1.php.net/manual/en/book.swf.php) (remember that!?).
+* *Because* the Object Orientation is so bad (see above) most of the internal functionality is plain flat (admittedly globally namespaced) functions. Need to calculate an [MD5 hash](http://au1.php.net/manual/en/function.md5.php), the function is called `md5()` no external `import`, `require`, `uses` or other means of bringing in a module is required. No hunting though object stacks or trying to remember the exact name of the library like in [Python](https://docs.python.org/2/library/hashlib.html) or [Perl](https://metacpan.org/pod/Digest::MD5) is required. Don't believe me? The function to return the local date format using JavaScript/WinJS is `Windows.Globalization.DateTimeFormatting.DateTimeFormatter.shortDate.format()`, in PHP its `date()` and you pass it a [format](http://au1.php.net/manual/en/class.datetime.php#datetime.constants.types).
+* Cross platform - PHP is hands down the most cross platform language this author (MC) has ever used. Yes this is a controversial thing to say, yes I can back it up. Bring it on.
+
+
+In conclusion, what usually happens, as with any other language that has its horrible bits (I'm looking at *you* JavaScript) is someone comes along and builds a framework over the top to abstract away the horribleness of the general language. Enter CodeIgniter...
+
+
 CodeIgniter projects
 --------------------
 > PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil, perpetrated by skilled but perverted professionals
@@ -226,6 +248,9 @@ General tips:
 
 Programming environments
 ========================
+> Programming is 1% inspiration, 99% trying to get your environment working.
+> - [Hacker News](https://twitter.com/HackerNewsOnion/status/390883204967567360)
+
 FIXME
 
 
@@ -282,8 +307,7 @@ Devops
 > 
 > So... Since a day's downtime could run into thousands of dollars of expenses even for a minor fault, don't break the system.
 
-For larger projects where MFDC is in some way involved with development and making sure the thing still works (aka operations) there are a number of additional 
-considerations that need to be made. Fundamentally, developers are no longer just builders who complete a task list, but are instead actively responsible for achieving two goals: Making sure existing functionality is not interrupted, making sure new deployments are achieved and most importantly, users are happy. 
+For larger projects where MFDC is in some way involved with development and making sure the thing still works (aka operations) there are a number of additional considerations that need to be made. Fundamentally, developers are no longer just builders who complete a task list, but are instead actively responsible for achieving two goals: Making sure existing functionality is not interrupted, making sure new deployments are achieved and most importantly, users are happy. 
 
 **Requisites**
 
@@ -326,6 +350,7 @@ Things break, when they do its the devops responsibility to fix it immediately, 
 
 * Remember everything is trackable through Git, so it's easy to figure out who wrote the line of code which broke the server, however, remember that whoever was in charge of deployment is ultimately responsible for the live build.
 * After fixing, discuss what went wrong with all stakeholders and discuss how to avoid this in future. Future prevention is more important than blame. 
+
 
 Clients
 =======
@@ -492,6 +517,7 @@ Glossary
 | MySQL                 | Database server of choice. Now owned by Oracle but has yet to turn evil.
 | NPM                   | Node Package Manager. Used only for JavaScript heavy projects. See [Package managers](#Package managers)
 | OAuth                 | A method of quickly turning a project into a living nightmare. Developed by Facebook to assist cross-site logins.
+| OO                    | Object Orientation. A manner of programming similar to bureaucracy where everyone points the finger at everyone else and no-one seems to do any work.
 | PHP                   | A minor yet necessary evil. Also an interpreted programing language for server side development.
 | Repo                  | Repository. This term usually means a single Git project instance.
 | SEO                   | Search Engine Optimization. A method to keep all the arseholes of the world under one job description. See Voodoo.
@@ -511,4 +537,3 @@ TODO
 * Useful libraries: Waveform, Joyst
 * Makefile instructions
 * Cpanel - temporary subdomains and main accounts
-* PHP - Positives and Negatives
