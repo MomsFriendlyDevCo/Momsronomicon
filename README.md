@@ -256,7 +256,7 @@ If you want to set up your environment yourself you may find the following tips 
 * You may also wish to set `display_errors` to `on` so you actually get errors displayed on screen rather than PHP just returning a blank page and sulking if you make a syntax error
 * You will also need a suitable database environment such as MySQL (don't forget to tweak your database settings in `/application/config/database.php` for CodeIgniter projects
 * You will need to set `AllowOverride` to `all` in all cases in `/etc/apache2/sites-available/default` to allow Apache to process `.htaccess` files
-* You *may* need to enable Apaches mod_rewrite depending on the distro
+* You *may* need to enable Apaches `mod_rewrite` depending on the distro
 * All our projects assume that the project is installed as the root of the site. We do this to avoid having to figure out where resources are located (as its always easier just to add a prefix `/` at the beginning of all links). This means that you will need to either install the site in Apaches document root *or* clone the repo elsewhere and set `/var/www` as a symbolic link pointing to it. You may find projects like [WWWSet](https://github.com/hash-bang/Bash-WWWSet) helpful to automate this process.
 
 
@@ -272,6 +272,60 @@ Despite any fancy pre-conceived notions there are only two text editors - [Emacs
 
 Thats not to say that other editors such as [Notepad++](http://www.notepad-plus-plus.org), [TextPad](http://www.textpad.com/), [Sublime Text](http://www.sublimetext.com) or the new hip-and-trendy [Atom](https://github.com/atom/atom) are necessarily bad, just that they more-or-less duplicate the functionality of either Emacs or Vi and in most ways not to the full degree.
 
+Devops
+------
+> Remember, as a developer, the cost of breaking a live system to a client is: 
+>  * The sum of wages of staff who can't do their job
+>  * The opportunity cost in time for the company - what they could be making if it weren't for the system being down. 
+>  * The loss of user trust in the system. 
+>  * Any data loss that might have occurred. 
+> 
+> So... Since a day's downtime could run into thousands of dollars of expenses even for a minor fault, don't break the system.
+
+For larger projects where MFDC is in some way involved with development and making sure the thing still works (aka operations) there are a number of additional 
+considerations that need to be made. Fundamentally, developers are no longer just builders who complete a task list, but are instead actively responsible for achieving two goals: Making sure existing functionality is not interrupted, making sure new deployments are achieved and most importantly, users are happy. 
+
+**Requisites**
+
+All devops people need to:
+
+* Know enough Linux to install, say, a LAMP server
+* be able to use a test-editor via the command line
+* Use SSH, cron, tar
+* Use the database via the command line
+* Understand makefiles
+* Have strong communication skills
+
+**Branching**
+
+MFDC doesn't yet have an official position on branching, but its often helpful when making significant system changes to branch the system with Git, achieve the changes and then remerge them back into the main branch. _However_, make sure all the developers on the project understand this, lack of familiarity with branching by a junior developer will cause merry hell. 
+
+**Initial deployment**
+
+Once the client is happy for the system to go live:
+
+1. Pull to server, make database, run install script. If there's anything more complicated, rethink it. Deployment has to be simple because it's where things to badly wrong. 
+2. Confirm deployment: Make sure **everything** is working. Ideally unit-tests, failing that, a manual observation. 
+3. Monitor response: Check with client/operations, monitor in the immediate few days of use the feedback. 
+
+**Communication - the art of modifying live systems**
+
+As a developer, all changes to live systems must be made known to the operations team. _Anything_ which affects the function of a website which is already in use must be run by them, even if only cosmetic. 
+
+**Database changes**
+
+Any modification to the database will critically change the live system. Running the simple makefile is not possible due to their being live data in the database. Field type changes are dangerous because there is the potential to lose live data. Therefore the entire issue is one which must be carefully monitored and performed flawlessly. 
+
+1. Database Schema changes are all critically important. Track every modification of an existing system because deployment of the software without corresponding live schema updates is critical.
+2. Ensure database backups before any modifications (as well as generally)
+3. Create database update sql files with a list of updates to run on the production server and _test them_.
+
+**Disaster Fallout and blame**
+
+Things break, when they do its the devops responsibility to fix it immediately, no matter who's at fault, the time of day or who's on call. Then find out where, how, when and what the leadup to the event was.  
+
+* Remember everything is trackable through Git, so it's easy to figure out who wrote the line of code which broke the server, however, remember that whoever was in charge of deployment is ultimately responsible for the live build.
+* After fixing, discuss what went wrong with all stakeholders and discuss how to avoid this in future. Future prevention is more important than blame. 
 
 Clients
 =======
