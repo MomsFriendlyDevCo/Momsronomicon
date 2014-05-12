@@ -176,6 +176,7 @@ CodeIgniter generally follows a pretty strict layout (all controllers live in `/
 * Normally a site has a Bootstrap based theme which can expose multiple JS and CSS files these files should *not* be modified (the theme may be updated at some later stage and your changes lost), instead create a file such as `/css/global.css` to override the CSS you may wish to alter aside from the main theme.
 * Try to use constants in place of literal strings. For example `SITE_TITLE` is useful to specify whatever the site is currently called. These should live in `/application/config/constants.php`.
 * CodeIgniter's provided [session library](http://ellislab.com/codeigniter/user-guide/libraries/sessions.html) is pretty poor and doesn't really serve a purpose. Using the default PHP `$_SESSION` variable is perfectly fine. You will need to add `session_start()` at the bottom of `/application/config/config.php` for new projects to enable this.
+* Stick all writable content into `/data`. Examples include things like uploadable pictures or other conent. We would recommend making seperate sub-folders for each controller such as `/data/foobar/123` (where 'foobar' is the controller and '123' is the DB item that links to it).
 
 
 Databases
