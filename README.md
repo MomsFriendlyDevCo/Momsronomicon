@@ -298,7 +298,26 @@ Despite any fancy pre-conceived notions there are only two text editors - [Emacs
 
 Thats not to say that other editors such as [Notepad++](http://www.notepad-plus-plus.org), [TextPad](http://www.textpad.com/), [Sublime Text](http://www.sublimetext.com) or the new hip-and-trendy [Atom](https://github.com/atom/atom) are necessarily bad, just that they more-or-less duplicate the functionality of either Emacs or Vi and in most ways not to the full degree.
 
-Devops
+
+Job descriptions
+================
+This section is to define a few catagories developers can fit into. Sometimes a task may require multiple of these job descriptions, sometimes they may all the the same person.
+
+
+Business Analysts (BAs)
+-----------------------
+FIXME
+
+
+Developer
+---------
+> Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence against complexity.
+> - David Gelernter
+
+FIXME
+
+
+DevOps
 ------
 > Remember, as a developer, the cost of breaking a live system to a client is: 
 >  * The sum of wages of staff who can't do their job
@@ -308,11 +327,14 @@ Devops
 > 
 > So... Since a day's downtime could run into thousands of dollars of expenses even for a minor fault, don't break the system.
 
+DevOps is primerily a position specializing in the deployment and maintenance of live systems in an on-going basis (i.e. not just deploy and forget like most website uploads).
+
 For larger projects where MFDC is in some way involved with development and making sure the thing still works (aka operations) there are a number of additional considerations that need to be made. Fundamentally, developers are no longer just builders who complete a task list, but are instead actively responsible for achieving two goals: Making sure existing functionality is not interrupted, making sure new deployments are achieved and most importantly, users are happy. 
+
 
 **Requisites**
 
-All devops people need to:
+All DevOps people need to:
 
 * Know enough Linux to install, say, a LAMP server
 * be able to use a test-editor via the command line
@@ -321,9 +343,11 @@ All devops people need to:
 * Understand makefiles
 * Have strong communication skills
 
+
 **Branching**
 
-MFDC doesn't yet have an official position on branching, but its often helpful when making significant system changes to branch the system with Git, achieve the changes and then remerge them back into the main branch. _However_, make sure all the developers on the project understand this, lack of familiarity with branching by a junior developer will cause merry hell. 
+MFDC doesn't have an official position on branching, but its often helpful when making significant system changes to branch the system with Git, achieve the changes and then remerge them back into the main branch. _However_, make sure all the developers on the project understand this, lack of familiarity with branching by a junior developer will cause merry hell. 
+
 
 **Initial deployment**
 
@@ -333,9 +357,11 @@ Once the client is happy for the system to go live:
 2. Confirm deployment: Make sure **everything** is working. Ideally unit-tests, failing that, a manual observation. 
 3. Monitor response: Check with client/operations, monitor in the immediate few days of use the feedback. 
 
+
 **Communication - the art of modifying live systems**
 
 As a developer, all changes to live systems must be made known to the operations team. _Anything_ which affects the function of a website which is already in use must be run by them, even if only cosmetic. 
+
 
 **Database changes**
 
@@ -345,12 +371,43 @@ Any modification to the database will critically change the live system. Running
 2. Ensure database backups before any modifications (as well as generally)
 3. Create database update sql files with a list of updates to run on the production server and _test them_.
 
+
 **Disaster Fallout and blame**
 
-Things break, when they do its the devops responsibility to fix it immediately, no matter who's at fault, the time of day or who's on call. Then find out where, how, when and what the leadup to the event was.  
+Things break, when they do its the DevOps responsibility to fix it immediately, no matter who's at fault, the time of day or who's on call. Then find out where, how, when and what the leadup to the event was.
 
 * Remember everything is trackable through Git, so it's easy to figure out who wrote the line of code which broke the server, however, remember that whoever was in charge of deployment is ultimately responsible for the live build.
 * After fixing, discuss what went wrong with all stakeholders and discuss how to avoid this in future. Future prevention is more important than blame. 
+
+
+SysAdmin
+--------
+> UNIX was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things.
+> - Doug Gwyn
+
+FIXME
+
+
+Testers
+-------
+> Debuggers don't remove bugs. They only show them in slow motion.
+
+FIXME
+
+
+Support
+-------
+> PICNIC (Problem in chair not in computer)
+> - General use acronym indicating a user is at fault
+
+IT support can broadly be seperated into three tiers: 1 though 3.
+
+| Tier   | Also called                   | Description                                       |
+|--------|-------------------------------|---------------------------------------------------|
+| Tier 1 | Helpdesk / Helldesk           | First point of contact for the general public. Common questions and queries |
+| Tier 2 | Troubleshooting / Deplpyment  | Generally 'the unseen' of IT. These are either the superiors (in experience) to Tier 1s or people setting up architectures (e.g. outfitting an office with hardware).
+| Tier 3 | SysAdmins                     | Someone who normally administers the most complex systems in the infrastucture.
+| Tier 4 | Externals                     | Not part of the usual Tier 1 - 3 this tier can be refered to when the problem exists outside of the infrastructure e.g. external vendors.
 
 
 Clients
@@ -361,8 +418,8 @@ Clients
 FIXME
 
 
-Business Analysts (BAs)
------------------------
+Specification
+-------------
 > Walking on water and developing software from a specification are easy if both are frozen
 > - Edward V Berard
 
@@ -382,11 +439,6 @@ Testing and Feedback
 > A computer lets you make more mistakes faster than any other invention in human history, with the possible exceptions of handguns and tequila
 > - Mitch Ratcliffe
 
-> PICNIC (Problem in chair not in computer)
-> - General use acronym indicating a user is at fault
-
-FIXME
-
 
 Interviewing Devs
 =================
@@ -403,33 +455,32 @@ Job description
 ---------------
 A general use job description suitable for web-devs.
 
-```
-Due to an upswing in projects we are seeking a coder with moderate to
-expert level expereience with PHP and specifically the CodeIgniter
-framework. Other skills such as MySQL or general *nix experience are
-desirable but non-essencial if the candidate is willing to learn new
-skills.
+	Due to an upswing in projects we are seeking a coder with moderate to
+	expert level expereience with PHP and specifically the CodeIgniter
+	framework. Other skills such as MySQL or general *nix experience are
+	desirable but non-essencial if the candidate is willing to learn new
+	skills.
 
 
-Essential skill set:
-* Intermediate written English skills
-* PHP 5 programming experience
-* Experience with MVC systems or other structured framework models
-* HTML, CSS and JavaScript experience
-* jQuery knowledge
+	Essential skill set:
+	* Intermediate written English skills
+	* PHP 5 programming experience
+	* Experience with MVC systems or other structured framework models
+	* HTML, CSS and JavaScript experience
+	* jQuery knowledge
 
 
-Desirable skills:
-* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
-* Experience of the PHP MVC framework CodeIgniter or equivelent (e.g. CakePHP, Symfony, Laravel)
-* MySQL 5.
-* Expereince of a frontend framework (ideally Bootstrap)
-* Experience with HTML5 + mobile app frameworks (ideally jQuery Mobile, Sencha or Ratchet).
-* *nix knowledge is considered a plus.
-* Familiarity with inline documentation systems - specicially PHPDoc.
-* General networking knowledge.
-* Extra skills that may be useful: BASH coding, general *nix console usage.
-```
+	Desirable skills:
+	* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
+	* Experience of the PHP MVC framework CodeIgniter or equivelent (e.g. CakePHP, Symfony, Laravel)
+	* MySQL 5.
+	* Expereince of a frontend design framework (ideally Bootstrap)
+	* Expereince of a frontend framework stack (ideally Angular)
+	* Experience with HTML5 + mobile app frameworks (ideally jQuery Mobile, Sencha or Ratchet).
+	* *nix knowledge is considered a plus.
+	* Familiarity with inline documentation systems - specicially PHPDoc.
+	* General networking knowledge.
+	* Extra skills that may be useful: BASH coding, general *nix console usage.
 
 
 Past projects
@@ -505,6 +556,7 @@ Glossary
 | CRUD                  | Create, Read, Update, Destroy - The four operations that (most) controllers in an MVC application should implement for all tables to be considered complete.
 | DB                    | DataBase. Used interchangeably.
 | Dev                   | Developer. You.
+| DevOps                | A different breed of a developer. DevOps is primerily concerned with system deployment and maintenance of Dev produced products.
 | Epochs / Epoc         | A method of storing time. An Unix Epoch is equal to the number of seconds since 1970-01-01 00:00:00 in UTC
 | Git                   | A package management system. Known for being developed by Linus Torvalds and its excessive use of tree diagrams in its documentation.
 | GitHub                | Website specializing in the storage of Git Repos
@@ -523,6 +575,7 @@ Glossary
 | Repo                  | Repository. This term usually means a single Git project instance.
 | SEO                   | Search Engine Optimization. A method to keep all the arseholes of the world under one job description. See Voodoo.
 | Server                | An owned, private resource that runs PHP.
+| SysAdmin              | Systems Administrator. Usually the root level administor of a server or cluster.
 | Text                  | General designation for any, potencially infinite, amount of textual data. Can usually compare to a BLOB.
 | UTC                   | Universal Time Code. A modern saying as no-one knows where "Greenwich" is.
 | View                  | A part of MVC. A view is usually raw output that should be sent to the browser.
