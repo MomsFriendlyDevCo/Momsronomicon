@@ -125,7 +125,7 @@ Each project should include at least a `README.md` file to describe the project 
 Unbreakable rules with projects:
 
 * All projects should work out-of-the-box as far as possible. Excepting databases (which _always_ need installing and fiddling with) your project should work immediately after `git clone`. Failure to follow this rule will result in damnation and/or Matt killing you.
-* Database schemas should be *human readable* - Do not just dump `mysqldump` into a file. It should be readable and less than 1mb (don't dump a terabyte of SQL into a file and call it good). Failutre to follow this rule will result in Matt killing all your pets (if you do not have any pets, Matt will by you some then kill them over your keyboard).
+* Database schemas should be *human readable* - Do not just dump `mysqldump` into a file. It should be readable and less than 1mb (don't dump a terabyte of SQL into a file and call it good). Failure to follow this rule will result in Matt killing all your pets (if you do not have any pets, Matt will by you some then kill them over your keyboard).
 * You may see folds in existing code these resemble three opening or closing braces e.g. `Some code {{{ ... }}}`. These are flags to a text editor that the text between the braces should be grouped with a labeling comment. This is helpful to gather large related blocks of code together and make the source code more readable.
 
 
@@ -388,8 +388,8 @@ SysAdmin
 FIXME
 
 
-Testers
--------
+Quality Control (QA)
+--------------------
 > Debuggers don't remove bugs. They only show them in slow motion.
 
 FIXME
@@ -405,7 +405,7 @@ IT support can broadly be seperated into three tiers: 1 though 3.
 | Tier   | Also called                   | Description                                       |
 |--------|-------------------------------|---------------------------------------------------|
 | Tier 1 | Helpdesk / Helldesk           | First point of contact for the general public. Common questions and queries |
-| Tier 2 | Troubleshooting / Deplpyment  | Generally 'the unseen' of IT. These are either the superiors (in experience) to Tier 1s or people setting up architectures (e.g. outfitting an office with hardware).
+| Tier 2 | Troubleshooting / Deployment  | Generally 'the unseen' of IT. These are either the superiors (in experience) to Tier 1s or people setting up architectures (e.g. outfitting an office with hardware).
 | Tier 3 | SysAdmins                     | Someone who normally administers the most complex systems in the infrastucture.
 | Tier 4 | Externals                     | Not part of the usual Tier 1 - 3 this tier can be refered to when the problem exists outside of the infrastructure e.g. external vendors.
 
