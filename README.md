@@ -8,25 +8,51 @@ A concise and (not) complete list of the procedures, advice, tips and miscellany
 
 
 Development stack
------------------
-For our projects we use the following development stack:
+=================
+Here at Mom's there are two major project 'flavours': PHP and NodeJS.
+
+PHP projects are largely legacy projects that are slowly being phased out. Its rare a new project would implement this platform but you may be asked to help maintain an existing project using this development stack. New modules may also be developed for existing PHP projects.
+
+NodeJS is the current preferred method of project development at Moms. The temptation is to assume that since NodeJS is JavaScript it must behave exactly the same as regular browser JavaScript - this is not true, there are quite a few major differences. Because of this we treat frontend (i.e. what the browser does) and backend (i.e. what the server does) as two entirely different programming environments.
+
+
+PHP Dev Stack
+-------------
+The PHP Dev stack uses the following:
 
 * Linux based web-hosting using Apache
-* HTML, CSS and Javascript - the basics of web-page creation
-* jQuery - With optional plugins
-* Angular - Frontend JS framework
-* PHP
-* CodeIgniter - An MVC framework for PHP
-* Git / GitHub - For project management
+* HTML, CSS and JavaScript - the basics of web-page creation
+* [jQuery](http://jquery.com) - With optional plugins
+* [AngularJS](http://angularjs.org) - Frontend JS framework
+* [PHP](http://php.net) - Server side language
+* [CodeIgniter](http://codeigniter.com/user_guide) - An MVC framework for PHP
+* Git / [GitHub](https://github.com) - For project management
 
 I wouldn't worry about most of the above if you've not come across them before. The largest hurdle will be picking up CodeIgniter first.
 
-[CodeIgniter](http://codeigniter.com/user_guide/) is an [MVC framework](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) for PHP.
+[CodeIgniter](http://codeigniter.com/user_guide) is an [MVC framework](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) for PHP.
 PHP is a programming language that, as you may already know, can quickly get out of hand when projects grow to anything more than one page websites. PHP is not alone in this, most higher level languages (HLLs) usually have the language as a baseline then add a framework to implement a specific function. For example Perl is a programing language Mason is its framework for generating web pages. JavaScript/NodeJS is a language, Express is the framework for web apps etc.
 
 MVC tries to tidy up development by implementing what is known as the [Principle of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment). The aim of this is when you look at someone else's project or someone looks at yours - regardless of however many hundreds of files you have comprising that project - it should be possible to immediately jump to the function, page or construct that you are looking for.
 
 What I would suggest is to have a read though the [CodeIgniter site](http://codeigniter.com/user_guide). Its generally written in a user friendly way with good [Starter material and videos](http://codeigniter.com/tutorials/). After you think you've got a grip on how everything works try putting together a simple project that involves a few different conceptual entities.
+
+More about PHP and CodeIgniter can be found in the [CodeIgniter projects](#CodeIgniter projects) chapter.
+
+
+NodeJS Dev Stack
+----------------
+The NodeJS Dev stack uses the following:
+
+* Linux based web-hosting using OpenShift or dedicated servers
+* HTML, CSS and JavaScript - the basics of web-page creation
+* [jQuery](http://jquery.com) - With optional plugins
+* [AngularJS](http://angularjs.org) - Frontend JS framework
+* [NodeJS platform](http://nodejs.org)
+* [Express](http://expressjs.com)
+* Git / [GitHub](https://github.com) - For project management
+
+More about NodeJS projects can be found in the [Backend NodeJS projects](#Backend NodeJS projects) chapter.
 
 
 Starter projects
@@ -44,79 +70,8 @@ Some ideas (listed beginner to advanced):
 * **User management system (higher level)** - Building off the above idea of a login system is the extended concept of an admin managing user accounts. This includes the ability to list, edit, create and delete accounts as per the CRUD / BREAD methologies listed below.
 
 
-
-General coding style
-====================
-The following is the recommended style for coding. MFDC is a small company with a good deal of flexibility so we don't really want to enforce the below too much. Most of the below is really just habits we've picked up as a company over the years. The following is aimed at providing a suitable consistent environment over projects and between programmers. We promise not to get mad if you use something different from the below if it can be justified. Sometimes some projects have different styles so the below is by no means definitive.
-
-* **Indentation** - [One-True-Brace / 1TBS style](https://en.wikipedia.org/wiki/One_true_brace#Variant:_1TBS). While other styles occasionally exist and are tolerated (albeit grudgingly) 1TBS is preferred.
-* **[Goto statements](https://en.wikipedia.org/wiki/Goto)** - No. None. At all. Under any circumstances. You know the bit about us not getting mad if it can be justified - this does not apply here. Violence will ensue. There will be blood.
-* **Global variables** - Contrary to what your computer science professor may have told you, global variables will not cause Satan to reclaim the earth. Sometimes they are justified. Don't be afraid to use them.
-* **Inline documentation** - Please learn about [phpDoc](http://phpdoc.org/), [jsdoc](https://github.com/jsdoc3/jsdoc) or one of the other inline documentation systems. See any of our existing projects for examples. Its not necessary to document every little thing, but documentation should be atomic - i.e. its either there and complete (listing all `@param` and `@return` parameters at a minimum) or not present at all. *Do not have half-completed documentation* as this is often worse than having none at all.
-
-
-JavaScript specific coding style
---------------------------------
-> Java is to JavaScript what Car is to Carpet
-> - Anon.
-
-* **Var** - Var must always be used in each function otherwise a variable becomes global (JS is the only language that does this). If you don't know what `var` means, learn.
-
-
-PHP specific coding style
---------------------------
-Try to use short tags where possible:
-
-	//Correct & neat
-	<?=$foo?>
-
-	// All the following are overly long and complex but are syntactically the same:
-	<?php echo $foo; ?>
-	// OR
-	<? echo $foo ?>
-	// OR
-	<?php print $foo; ?>
-
-
-The same goes for loading objects in CodeIgniter/PHP:
-
-	// Correct
-	<? $this->load->helper('form') ?>
-
-	// Wrong - Takes up too much room and overly complex
-	<?php
-	$this->load->helper('form');
-	?>
-
-
-Please use the standard C syntax rather than the alternate PHP syntax:
-
-	// Correct
-	<? if ($widgets) { ?>
-	<ul>
-		<? foreach ($widgets as $widget) { ?>
-		<li><?=$widget['name']?></li>
-		<? } ?>
-	</ul>
-	<? } else { ?>
-	<div class="alert alert-info">No widgets found</div>
-	<? } ?>
-
-
-	// Wrong (and weird)
-	<? if ($widgets): ?>
-	<ul>
-		<? foreach ($widgets as $widget): ?>
-		<li><?=$widget['name']?></li>
-		<? endforeach; ?>
-	</ul>
-	<? elseif: ?>
-	<div class="alert alert-info">No widgets found</div>
-	<? endif: ?>
-
-
-Project layout
-==============
+Projects
+========
 > Programs are meant to be read by humans and only incidentally for computers to execute
 > - H. Abelson and G. Sussman (Structure and Interpretation of Computer Programs)
 
@@ -127,6 +82,64 @@ Unbreakable rules with projects:
 * All projects should work out-of-the-box as far as possible. Excepting databases (which _always_ need installing and fiddling with) your project should work immediately after `git clone`. Failure to follow this rule will result in damnation and/or Matt killing you.
 * Database schemas should be *human readable* - Do not just dump `mysqldump` / `mongodump` into a file. It should be readable and less than 1mb (don't dump a terabyte of SQL into a file and call it good). Failure to follow this rule will result in Matt killing all your pets (if you do not have any pets, Matt will by you some then kill them over your keyboard).
 * You may see folds in existing code these resemble three opening or closing braces e.g. `Some code {{{ ... }}}`. These are flags to a text editor that the text between the braces should be grouped with a labeling comment. This is helpful to gather large related blocks of code together and make the source code more readable.
+
+
+Package managers
+----------------
+There are quite a few package managers out there. We've found that the following work quite well:
+
+* **[Bower](http://bower.io)** - This is probably the package manager that will get the most use. Its centered specificially on front-end code (mainly JavaScript and CSS) and works fine with any project.
+* **[Composer](http://getcomposer.org)** - A package manager specifically for PHP, this provides a nice simple Object Oritentated interface that takes advantage of PHP's Magic loading (i.e. `$foo = new BarObject()` will magically load whatever files `BarObject` lives in).
+* **[NPM](https://www.npmjs.org)** - Used usually for backend JavaScript / NodeJS dev only.
+* **Everything else** - As previously stated, dump everything else in `/lib` so everyone at least knows its an external component.
+
+All three package managers dump their files in their own folders (`/bower_components` for Bower, `/vendor` for Composer and `/node_modules` for NPM). Composer and NPM also update their own config files (`/composer.json` and `/package.json` respectively).
+
+All files (config files and downloaded files for each submodule) should be included within Git. For example if you install Bootstrap via bower (i.e. `bower install bootstrap`) the created folder (`/bower_components/bootstrap`) should be committed into Git on your next push. The principle here is that someone cloning your project from scratch should be able to get your project running _without_  needing to re-run the package manager to pull in all the prerequisites (e.g. `bower install`, `npm install`, `composer install` on each pull).
+
+An exception to the above can be made for open-source components (not full projects). For example a widget that belongs in its own Git repo may omit any pre-requisite packages as the package manager will download and install these within the parent project anyway.
+
+
+Version control - Git
+---------------------
+> And when I *do* get involved with the code, it's not because it's "cool", it's because it broke, and you'll find me cursing the people who wrote it, and questioning their parentage and that of their pets
+> - [Linus Torvalds](http://meta.slashdot.org/story/12/10/11/0030249/linus-torvalds-answers-your-questions)
+
+Git is the de-facto version control system of choice in MFDC. [GitHub](https://github.com) the preferred distribution server.
+
+General tips:
+
+* Pull as often as possible to prevent future merging problems - 90% of issues with Git are due to a coder not pulling enough and working on already-patched code.
+	* Always pull before starting a new feature/bugfix
+
+* Commit as often as possible. Its better to commit small chunks that fix individual errors than one large commit which will take ages to unpick if someone else only wants one feature of your commit.
+	* Learn to use `git add -p` (git add patch), this allows you to selectively add bits of your code to a commit. This is extremely useful to pick out bits of code from an exceptionally large patch and label them correctly.
+
+* Commit comments are mandatory. This is enforced by Git anyway but please try to be at least a little descriptive of your commit. Generally we go with the 'one line description' method of committing (don't go nuts) but multiple lines are advised if you use any of the below prefixes (one per line)
+	* Some example prefixes we find useful:
+		* `CLIENT: xxx` - The client asked for something specific even if the dev thinks its stupid
+		* `BUGFIX: xxx` - This commit includes a correction to a bug
+		* `REFACTOR: xxx` - This commit includes code cleanup which does not effect the operation of the code (improved comments, indentation fixes etc)
+		* `REVERT: xxx` - Revert of a previous commit (Git uses this prefix automatically anyway)
+* Branching is only necessary on 'live' projects or if you are making an especially large commit that may break things. If the project is being developed and it is not mission critical or live then comitting to master is good as it allows everyone to test everyone elses code.
+* Do not push broken code _ever_, under any circumstances. A push should indicate that the code you are pushing has been completed and is ready at least for testing. Buggy or broken code that breaks everything will result in the WOM (Wrath of Matt).
+
+
+General coding style
+--------------------
+The following is the recommended style for coding. MFDC is a small company with a good deal of flexibility so we don't really want to enforce the below too much. Most of the below is really just habits we've picked up as a company over the years. The following is aimed at providing a suitable consistent environment over projects and between programmers. We promise not to get mad if you use something different from the below if it can be justified. Sometimes some projects have different styles so the below is by no means definitive.
+
+* **Indentation** - [One-True-Brace / 1TBS style](https://en.wikipedia.org/wiki/One_true_brace#Variant:_1TBS). While other styles occasionally exist and are tolerated (albeit grudgingly) 1TBS is preferred.
+* **[Goto statements](https://en.wikipedia.org/wiki/Goto)** - No. None. At all. Under any circumstances. You know the bit about us not getting mad if it can be justified - this does not apply here. Violence will ensue. There will be blood.
+* **Global variables** - Contrary to what your computer science professor may have told you, global variables will not cause Satan to reclaim the earth. Sometimes they are justified. Don't be afraid to use them.
+* **Inline documentation** - Please learn about [phpDoc](http://phpdoc.org/), [jsdoc](https://github.com/jsdoc3/jsdoc) or one of the other inline documentation systems. See any of our existing projects for examples. Its not necessary to document every little thing, but documentation should be atomic - i.e. its either there and complete (listing all `@param` and `@return` parameters at a minimum) or not present at all. *Do not have half-completed documentation* as this is often worse than having none at all.
+
+See each individual project type in the next section for language specific styles.
+
+
+PHP / CodeIgniter projects
+==========================
+PHP and CodeIgniter is being phased out here at MFDC but there are still a lot of legacy software projects around which may require maintenance or new additions.
 
 
 PHP
@@ -179,8 +192,8 @@ CodeIgniter generally follows a pretty strict layout (all controllers live in `/
 * Stick all writable content into `/data`. Examples include things like uploadable pictures or other conent. We would recommend making seperate sub-folders for each controller such as `/data/foobar/123` (where 'foobar' is the controller and '123' is the DB item that links to it).
 
 
-Databases
----------
+MySQL Databases
+---------------
 > There are only 3 numbers of interest to a computer scientist: 1, 0 and infinity
 > - [The Zero One Infinity Rule](https://en.wikipedia.org/wiki/Zero_one_infinity)
 
@@ -206,58 +219,11 @@ General tips when creating your database - these are all purely advice and can b
 * **Refering to dates** - Dates outside of Unix epochs such as human readable dates (e.g. in comments or elsewhere) should be noted in big-endian [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format. Since we work with a lot of external devs this prevents confusion, it also means named files sort logically (year first, day last). Its also a format non-programmers can pick up without prompting, use it, you'll like it.
 
 
-Package managers
-----------------
-There are quite a few package managers out there. We've found that the following work quite well:
-
-* **[Bower](http://bower.io)** - This is probably the package manager that will get the most use. Its centered specificially on front-end code (mainly JavaScript and CSS) and works fine with any project.
-* **[Composer](http://getcomposer.org)** - A package manager specifically for PHP, this provides a nice simple Object Oritentated interface that takes advantage of PHP's Magic loading (i.e. `$foo = new BarObject()` will magically load whatever files `BarObject` lives in).
-* **[NPM](https://www.npmjs.org)** - Used usually for backend JavaScript / NodeJS dev only.
-* **Everything else** - As previously stated, dump everything else in `/lib` so everyone at least knows its an external component.
-
-All three package managers dump their files in their own folders (`/bower_components` for Bower, `/vendor` for Composer and `/node_modules` for NPM). Composer and NPM also update their own config files (`/composer.json` and `/package.json` respectively).
-
-All files (config files and downloaded files for each submodule) should be included within Git. For example if you install Bootstrap via bower (i.e. `bower install bootstrap`) the created folder (`/bower_components/bootstrap`) should be committed into Git on your next push. The principle here is that someone cloning your project from scratch should be able to get your project running _without_  needing to re-run the package manager to pull in all the prerequisites (e.g. `bower install`, `npm install`, `composer install` on each pull).
-
-An exception to the above can be made for open-source components (not full projects). For example a widget that belongs in its own Git repo may omit any pre-requisite packages as the package manager will download and install these within the parent project anyway.
-
-
-Version control - Git
-=====================
-> And when I *do* get involved with the code, it's not because it's "cool", it's because it broke, and you'll find me cursing the people who wrote it, and questioning their parentage and that of their pets
-> - [Linus Torvalds](http://meta.slashdot.org/story/12/10/11/0030249/linus-torvalds-answers-your-questions)
-
-Git is the de-facto version control system of choice in MFDC. [GitHub](https://github.com) the preferred distribution server.
-
-General tips:
-
-* Pull as often as possible to prevent future merging problems - 90% of issues with Git are due to a coder not pulling enough and working on already-patched code.
-	* Always pull before starting a new feature/bugfix
-
-* Commit as often as possible. Its better to commit small chunks that fix individual errors than one large commit which will take ages to unpick if someone else only wants one feature of your commit.
-	* Learn to use `git add -p` (git add patch), this allows you to selectively add bits of your code to a commit. This is extremely useful to pick out bits of code from an exceptionally large patch and label them correctly.
-
-* Commit comments are mandatory. This is enforced by Git anyway but please try to be at least a little descriptive of your commit. Generally we go with the 'one line description' method of committing (don't go nuts) but multiple lines are advised if you use any of the below prefixes (one per line)
-	* Some example prefixes we find useful:
-		* `CLIENT: xxx` - The client asked for something specific even if the dev thinks its stupid
-		* `BUGFIX: xxx` - This commit includes a correction to a bug
-		* `REFACTOR: xxx` - This commit includes code cleanup which does not effect the operation of the code (improved comments, indentation fixes etc)
-		* `REVERT: xxx` - Revert of a previous commit (Git uses this prefix automatically anyway)
-* Branching is only necessary on 'live' projects or if you are making an especially large commit that may break things. If the project is being developed and it is not mission critical or live then comitting to master is good as it allows everyone to test everyone elses code.
-* Do not push broken code _ever_, under any circumstances. A push should indicate that the code you are pushing has been completed and is ready at least for testing. Buggy or broken code that breaks everything will result in the WOM (Wrath of Matt).
-
-
-Programming environments
-========================
+PHP / Apache environment setup
+------------------------------
 > Programming is 1% inspiration, 99% trying to get your environment working.
 > - [Hacker News](https://twitter.com/HackerNewsOnion/status/390883204967567360)
-
-FIXME
-
-
-Web development
----------------
-Since we are primarily a web development company you will need to have Apache + PHP running somewhere to actually test what you're developing.
+For the PHP / CodeIgniter / MySQL development stack you will need to have Apache + PHP running somewhere to actually test what you're developing.
 
 I would suggest Linux if you are familiar with it (and its a simple `sudo apt-get install lamp-server^` to install) or using [XAMPP](https://www.apachefriends.org/index.html) for Windows or Mac.
 
@@ -284,6 +250,87 @@ If you want to set up your environment yourself you may find the following tips 
 * You will need to set `AllowOverride` to `all` in all cases in `/etc/apache2/sites-available/default` to allow Apache to process `.htaccess` files
 * You *may* need to enable Apaches `mod_rewrite` depending on the distro
 * All our projects assume that the project is installed as the root of the site. We do this to avoid having to figure out where resources are located (as its always easier just to add a prefix `/` at the beginning of all links). This means that you will need to either install the site in Apaches document root *or* clone the repo elsewhere and set `/var/www` as a symbolic link pointing to it. You may find projects like [WWWSet](https://github.com/hash-bang/Bash-WWWSet) helpful to automate this process.
+
+
+PHP / CodeIgniter project coding style
+--------------------------------------
+Try to use short tags where possible:
+
+	//Correct & neat
+	<?=$foo?>
+
+	// All the following are overly long and complex but are syntactically the same:
+	<?php echo $foo; ?>
+	// OR
+	<? echo $foo ?>
+	// OR
+	<?php print $foo; ?>
+
+
+The same goes for loading objects in CodeIgniter/PHP:
+
+	// Correct
+	<? $this->load->helper('form') ?>
+
+	// Wrong - Takes up too much room and overly complex
+	<?php
+	$this->load->helper('form');
+	?>
+
+
+Please use the standard C syntax rather than the alternate PHP syntax:
+
+	// Correct
+	<? if ($widgets) { ?>
+	<ul>
+		<? foreach ($widgets as $widget) { ?>
+		<li><?=$widget['name']?></li>
+		<? } ?>
+	</ul>
+	<? } else { ?>
+	<div class="alert alert-info">No widgets found</div>
+	<? } ?>
+
+
+	// Wrong (and weird)
+	<? if ($widgets): ?>
+	<ul>
+		<? foreach ($widgets as $widget): ?>
+		<li><?=$widget['name']?></li>
+		<? endforeach; ?>
+	</ul>
+	<? elseif: ?>
+	<div class="alert alert-info">No widgets found</div>
+	<? endif: ?>
+
+
+Backend NodeJS projects
+=======================
+> Java is to JavaScript what Car is to Carpet
+> - Anon.
+
+JavaScript coding style
+-----------------------
+
+* **Var** - Var must always be used in each function otherwise a variable becomes global (JS is the only language that does this). If you don't know what `var` means, learn.
+
+
+Frontend JavaScript projects
+============================
+When we say 'Frontend JavaScript' we usually mean [AngularJS](http://angularjs.org), although there can also be a bit of [jQuery](http://jquery.com) thrown in to do some of the more complex DOM manipulation.
+
+Frontend coding style
+---------------------
+Most of the same JavaScript styles under the [Node heading](#JavaScript Coding Style) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
+
+FIXME
+
+
+
+General tips
+============
+> The easiest method to compute newbie programmer specific hash is to sit them in front of VI and ask them to quit.
+> - MC, The author
 
 
 Editors
