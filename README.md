@@ -125,7 +125,7 @@ Each project should include at least a `README.md` file to describe the project 
 Unbreakable rules with projects:
 
 * All projects should work out-of-the-box as far as possible. Excepting databases (which _always_ need installing and fiddling with) your project should work immediately after `git clone`. Failure to follow this rule will result in damnation and/or Matt killing you.
-* Database schemas should be *human readable* - Do not just dump `mysqldump` into a file. It should be readable and less than 1mb (don't dump a terabyte of SQL into a file and call it good). Failure to follow this rule will result in Matt killing all your pets (if you do not have any pets, Matt will by you some then kill them over your keyboard).
+* Database schemas should be *human readable* - Do not just dump `mysqldump` / `mongodump` into a file. It should be readable and less than 1mb (don't dump a terabyte of SQL into a file and call it good). Failure to follow this rule will result in Matt killing all your pets (if you do not have any pets, Matt will by you some then kill them over your keyboard).
 * You may see folds in existing code these resemble three opening or closing braces e.g. `Some code {{{ ... }}}`. These are flags to a text editor that the text between the braces should be grouped with a labeling comment. This is helpful to gather large related blocks of code together and make the source code more readable.
 
 
@@ -591,3 +591,4 @@ TODO
 * Useful libraries: Waveform, Joyst
 * Makefile instructions
 * Cpanel - temporary subdomains and main accounts
+* Timesheets
