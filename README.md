@@ -37,7 +37,7 @@ MVC tries to tidy up development by implementing what is known as the [Principle
 
 What I would suggest is to have a read though the [CodeIgniter site](http://codeigniter.com/user_guide). Its generally written in a user friendly way with good [Starter material and videos](http://codeigniter.com/tutorials/). After you think you've got a grip on how everything works try putting together a simple project that involves a few different conceptual entities.
 
-More about PHP and CodeIgniter can be found in the [CodeIgniter projects](#CodeIgniter projects) chapter.
+More about PHP and CodeIgniter can be found in the [CodeIgniter projects](#php--codeigniter-projects) chapter.
 
 
 NodeJS Dev Stack
@@ -52,7 +52,7 @@ The NodeJS Dev stack uses the following:
 * [Express](http://expressjs.com)
 * Git / [GitHub](https://github.com) - For project management
 
-More about NodeJS projects can be found in the [Backend NodeJS projects](#Backend NodeJS projects) chapter.
+More about NodeJS projects can be found in the [Backend NodeJS projects](#backend-nodejs-projects) chapter.
 
 
 Starter projects
@@ -164,8 +164,8 @@ And now for the good news:
 In conclusion, what usually happens, as with any other language that has its horrible bits (I'm looking at *you* JavaScript) is someone comes along and builds a framework over the top to abstract away the horribleness of the general language. Enter CodeIgniter...
 
 
-CodeIgniter projects
---------------------
+CodeIgniter
+-----------
 > PHP is a minor evil perpetrated and created by incompetent amateurs, whereas Perl is a great and insidious evil, perpetrated by skilled but perverted professionals
 > - Jon Ribbens
 
@@ -182,9 +182,9 @@ CodeIgniter generally follows a pretty strict layout (all controllers live in `/
 	* The schema file should work immutably - i.e. must contain `DROP TABLE IF EXISTS foo;` statements to completely recreate the DB if needed
 	* The schema file should contain example INSERT statements where practical to allow another coder to quickly recreate a test environment
 	* Since everyone seems to have their own Database setup its usually a good idea to name your desktop/laptop something unique and add a rule for that name in the `/application/config/database.php` file. See an existing project for examples.
-* All third party libraries and submodules live in `/lib`. This makes it easy to manage what is part of this project and what are libraries from elsewhere. See the [Package managers](#Package managers) section for more information on 3rd party libraries.
+* All third party libraries and submodules live in `/lib`. This makes it easy to manage what is part of this project and what are libraries from elsewhere. See the [Package managers](#package-managers) section for more information on 3rd party libraries.
 	* If a third party lib is to be used in the project its recommended to make a view inside `/application/views/lib` to load its CSS, JavaScript and HTML. e.g. if there is a 3rd party WYSIWYG editor make a loader for this in `/application/views/lib/wysiwyg.php` which can quickly load all its dependencies.
-	* The first place to look for 3rd party libraries is Composer (see [Package managers](#Package managers)) before just cloning a 3rd party Git library into a folder.
+	* The first place to look for 3rd party libraries is Composer (see [Package managers](#package-managers)) before just cloning a 3rd party Git library into a folder.
 * JavaScript files live in `/js`, CSS files live in `/css`.
 * Normally a site has a Bootstrap based theme which can expose multiple JS and CSS files these files should *not* be modified (the theme may be updated at some later stage and your changes lost), instead create a file such as `/css/global.css` to override the CSS you may wish to alter aside from the main theme.
 * Try to use constants in place of literal strings. For example `SITE_TITLE` is useful to specify whatever the site is currently called. These should live in `/application/config/constants.php`.
@@ -223,6 +223,7 @@ PHP / Apache environment setup
 ------------------------------
 > Programming is 1% inspiration, 99% trying to get your environment working.
 > - [Hacker News](https://twitter.com/HackerNewsOnion/status/390883204967567360)
+
 For the PHP / CodeIgniter / MySQL development stack you will need to have Apache + PHP running somewhere to actually test what you're developing.
 
 I would suggest Linux if you are familiar with it (and its a simple `sudo apt-get install lamp-server^` to install) or using [XAMPP](https://www.apachefriends.org/index.html) for Windows or Mac.
@@ -321,7 +322,7 @@ When we say 'Frontend JavaScript' we usually mean [AngularJS](http://angularjs.o
 
 Frontend coding style
 ---------------------
-Most of the same JavaScript styles under the [Node heading](#JavaScript Coding Style) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
+Most of the same JavaScript styles under the [NodeJS backend chapter](#javascript-coding-style) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
 
 FIXME
 
@@ -495,7 +496,7 @@ Interviewing Devs
 Alternate title for this section: "How to tell if a potential developer really knows what he is doing".
 This section is intended as a rough guide to the dev skills we are looking for.
 
-You may also find the [Starter projects](#Starter projects) section useful as it also provides some sample projects to give to potential employees.
+You may also find the [Starter projects](#starter-projects) section useful as it also provides some sample projects to give to potential employees.
 
 
 Job description
@@ -592,13 +593,13 @@ Glossary
 |-----------------------|-------------------------------------------------------|
 | Backend               | See server.
 | BLOB                  | Binary Large OBject - A large unspecified amount of data such as an image file in binary form.
-| Bower                 | A package manager aim at front-end components developed by Twitter. See [Package managers](#Package managers)
+| Bower                 | A package manager aim at front-end components developed by Twitter. See [Package managers](#package-managers)
 | Bugfix                | A code commit that fixes a bug.
 | Client                | Can either mean the person paying for a project OR in the context of "client end" this means stuff the browser runs like JavaScript.
 | CMS                   | Content Management System. See WordPress.
 | CodeIgniter           | MFDC's MVC PHP framework of choice.
 | Commit                | A checked in, logged Git instance. This should correspond with a feature or bugfix.
-| Composer              | A package manager aimed specifically at PHP. See [Package managers](#Package managers)
+| Composer              | A package manager aimed specifically at PHP. See [Package managers](#package-managers)
 | Controller            | A part of MVC. A controller is the first point of call in a project and usually represents a plural noun e.g. 'users'.
 | CRUD                  | Create, Read, Update, Destroy - The four operations that (most) controllers in an MVC application should implement for all tables to be considered complete.
 | DB                    | DataBase. Used interchangeably.
@@ -615,7 +616,7 @@ Glossary
 | Model                 | A part of MVC. A model is the gateway to the database.
 | MVC                   | Model-View-Controller. A strategy to develop reasonably clean applications. 
 | MySQL                 | Database server of choice. Now owned by Oracle but has yet to turn evil.
-| NPM                   | Node Package Manager. Used only for JavaScript heavy projects. See [Package managers](#Package managers)
+| NPM                   | Node Package Manager. Used only for JavaScript heavy projects. See [Package managers](#package-managers)
 | OAuth                 | A method of quickly turning a project into a living nightmare. Developed by Facebook to assist cross-site logins.
 | OO                    | Object Orientation. A manner of programming similar to bureaucracy where everyone points the finger at everyone else and no-one seems to do any work.
 | PHP                   | A minor yet necessary evil. Also an interpreted programing language for server side development.
