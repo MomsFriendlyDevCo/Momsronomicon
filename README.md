@@ -629,7 +629,7 @@ The below is some recommended readings for various technologies.
 MFDC usually has all of the book recommendations in both PDF and dead-tree formats
 
 * **PHP** - [Professional CodeIgniter](http://www.amazon.com/Professional-CodeIgniter-Thomas-Myer/dp/0470282452/ref=sr_1_1?ie=UTF8&qid=1399350667&sr=8-1&keywords=professional+codeigniter)
-* **JavaScript/AngularJS** - [AngularJS](http://www.amazon.com/AngularJS-Brad-Green/dp/1449344852/ref=sr_1_4?ie=UTF8&qid=1399350683&sr=8-4&keywords=angularjs) also [ng-book](https://www.ng-book.com)
+* **JavaScript/AngularJS** - [AngularJS](http://www.amazon.com/AngularJS-Brad-Green/dp/1449344852/ref=sr_1_4?ie=UTF8&qid=1399350683&sr=8-4&keywords=angularjs) also [ng-book](https://www.ng-book.com). [AngularJS-StyleGuide](https://github.com/johnpapa/angularjs-styleguide) has some good (but advanced) tips for laying out AngularJS modules.
 
 
 Other style guides
@@ -677,7 +677,7 @@ Glossary
 | PHP                   | A minor yet necessary evil. Also an interpreted programing language for server side development.
 | Repo                  | Repository. This term usually means a single Git project instance.
 | SEO                   | Search Engine Optimization. A method to keep all the arseholes of the world under one job description. See Voodoo.
-| Server                | An owned, private resource that runs PHP.
+| Server                | An owned, private resource.
 | SysAdmin              | Systems Administrator. Usually the root level administor of a server or cluster.
 | Text                  | General designation for any, potencially infinite, amount of textual data. Can usually compare to a BLOB.
 | UTC                   | Universal Time Code. A modern saying as no-one knows where "Greenwich" is.
@@ -695,3 +695,4 @@ TODO
 * Makefile instructions
 * Cpanel - temporary subdomains and main accounts
 * Timesheets
+* PHP / JS Ternarys
