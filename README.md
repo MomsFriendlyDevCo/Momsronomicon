@@ -370,8 +370,9 @@ The project tree breakdown is listed below. For each path an 'edit chance' is gi
 | `/`                                                 | Rare        | Root project directory |
 | `/app/`                                             | Common      | Root Angular directory |
 | `/app/app.js`                                       | Rare        | Main Angular initalizer file |
+| `/app/routes.js`                                    | Common[1]   | Main Angular initalizer file |
 | `/app/controllers/`                                 | Common      | Angular controller directory |
-| `/app/controllers/global.js`                        | Common[1]   | Angular rootScope controller |
+| `/app/controllers/global.js`                        | Common[2]   | Angular rootScope controller |
 | `/app/directives/`                                  | Common      | Angular directives directory |
 | `/app/filters/`                                     | Common      | Angular filters directory |
 | `/app/models/`                                      | Common      | Angular models directory |
@@ -380,7 +381,8 @@ The above is sometimes subject to change depending on the backend environment or
 
 Notes:
 
-1. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
+1. Only applies if using the Angular [ngRoute](https://github.com/angular/bower-angular-route) module.
+2. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
 
 
 General tips
