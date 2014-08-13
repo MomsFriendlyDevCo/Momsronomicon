@@ -67,7 +67,7 @@ Some ideas (listed beginner to advanced):
 
 * **Login system (mid level)** - Since a login system includes the need for a database, controllers to manage the process and models to manage the data a login system provides a end-to-end example project which should encompass all elements of a project.
 
-* **User management system (higher level)** - Building off the above idea of a login system is the extended concept of an admin managing user accounts. This includes the ability to list, edit, create and delete accounts as per the CRUD / BREAD methologies listed below.
+* **User management system (higher level)** - Building off the above idea of a login system is the extended concept of an admin managing user accounts. This includes the ability to list, edit, create and delete accounts as per the CRUD / BREAD methodologies listed below.
 
 
 Projects
@@ -88,8 +88,8 @@ Package managers
 ----------------
 There are quite a few package managers out there. We've found that the following work quite well:
 
-* **[Bower](http://bower.io)** - This is probably the package manager that will get the most use. Its centered specificially on front-end code (mainly JavaScript and CSS) and works fine with any project.
-* **[Composer](http://getcomposer.org)** - A package manager specifically for PHP, this provides a nice simple Object Oritentated interface that takes advantage of PHP's Magic loading (i.e. `$foo = new BarObject()` will magically load whatever files `BarObject` lives in).
+* **[Bower](http://bower.io)** - This is probably the package manager that will get the most use. Its centered specifically on front-end code (mainly JavaScript and CSS) and works fine with any project.
+* **[Composer](http://getcomposer.org)** - A package manager specifically for PHP, this provides a nice simple Object Orientated interface that takes advantage of PHP's Magic loading (i.e. `$foo = new BarObject()` will magically load whatever files `BarObject` lives in).
 * **[NPM](https://www.npmjs.org)** - Used usually for backend JavaScript / NodeJS dev only.
 * **Everything else** - As previously stated, dump everything else in `/lib` so everyone at least knows its an external component.
 
@@ -119,9 +119,9 @@ General tips:
 	* Some example prefixes we find useful:
 		* `CLIENT: xxx` - The client asked for something specific even if the dev thinks its stupid
 		* `BUGFIX: xxx` - This commit includes a correction to a bug
-		* `REFACTOR: xxx` - This commit includes code cleanup which does not effect the operation of the code (improved comments, indentation fixes etc)
+		* `REFACTOR: xxx` - This commit includes code cleanup which does not effect the operation of the code (improved comments, indentation fixes etc.)
 		* `REVERT: xxx` - Revert of a previous commit (Git uses this prefix automatically anyway)
-* Branching is only necessary on 'live' projects or if you are making an especially large commit that may break things. If the project is being developed and it is not mission critical or live then comitting to master is good as it allows everyone to test everyone elses code.
+* Branching is only necessary on 'live' projects or if you are making an especially large commit that may break things. If the project is being developed and it is not mission critical or live then committing to master is good as it allows everyone to test everyone elses code.
 * Do not push broken code _ever_, under any circumstances. A push should indicate that the code you are pushing has been completed and is ready at least for testing. Buggy or broken code that breaks everything will result in the WOM (Wrath of Matt).
 
 
@@ -148,8 +148,8 @@ PHP is one of the two major programming languages at MFDC (the other being the f
 
 Ok lets get the bad things out of the way to start with. There are [lots of faults with PHP](https://maurus.net/resources/programming-languages/php) but lets just concentrate on those that effect us as a company and you as a dev:
 
-* [Functions, parameters and return values are inconsistantly named](http://tnx.nl/php.html#args), not in a constistant style or just plain suck - PHP suffers majorly from this issue. Is it [Needle, Haystack](http://au1.php.net/manual/en/function.explode.php) or [Haystack, Needle](http://au1.php.net/manual/en/function.strpos.php), is it [Compound function names](http://au1.php.net/manual/en/function.isset.php) or [Underscores](http://au1.php.net/manual/en/function.is-array.php). The language is a mess.
-* Object Orientation is just **bad** - While classical OO techniques such as inheritence do exist, more modern techniques such as introspection or [Duck Punching](https://en.wikipedia.org/wiki/Duck_punching) are plain unsupported.
+* [Functions, parameters and return values are inconsistently named](http://tnx.nl/php.html#args), not in a logical style or just plain suck. Is it [Needle, Haystack](http://au1.php.net/manual/en/function.explode.php) or [Haystack, Needle](http://au1.php.net/manual/en/function.strpos.php), is it [Compound function names](http://au1.php.net/manual/en/function.isset.php) or [Underscore function names](http://au1.php.net/manual/en/function.is-array.php). The language is a mess.
+* Object Orientation is just **bad** - While classical OO techniques such as inheritance do exist, more modern techniques such as introspection or [Duck Punching](https://en.wikipedia.org/wiki/Duck_punching) are either unsupported or involve workarounds which are painful to code.
 * The PHP organisation committee appear to be taking whatever the opposite of LSD is - something that makes you increasingly more boring and pedantic. Their rejection of some perfectly sensible additions to the language is [nothing short](https://wiki.php.net/rfc/keywords_as_identifiers) of [baffling](https://wiki.php.net/rfc/named_params).
 
 
@@ -189,7 +189,7 @@ CodeIgniter generally follows a pretty strict layout (all controllers live in `/
 * Normally a site has a Bootstrap based theme which can expose multiple JS and CSS files these files should *not* be modified (the theme may be updated at some later stage and your changes lost), instead create a file such as `/css/global.css` to override the CSS you may wish to alter aside from the main theme.
 * Try to use constants in place of literal strings. For example `SITE_TITLE` is useful to specify whatever the site is currently called. These should live in `/application/config/constants.php`.
 * CodeIgniter's provided [session library](http://ellislab.com/codeigniter/user-guide/libraries/sessions.html) is pretty poor and doesn't really serve a purpose. Using the default PHP `$_SESSION` variable is perfectly fine. You will need to add `session_start()` at the bottom of `/application/config/config.php` for new projects to enable this.
-* Stick all writable content into `/data`. Examples include things like uploadable pictures or other conent. We would recommend making seperate sub-folders for each controller such as `/data/foobar/123` (where 'foobar' is the controller and '123' is the DB item that links to it).
+* Stick all writable content into `/data`. Examples include things like uploadable pictures or other content. We would recommend making separate sub-folders for each controller such as `/data/foobar/123` (where 'foobar' is the controller and '123' is the DB item that links to it).
 
 
 MySQL Databases
@@ -315,7 +315,7 @@ Project layout
 --------------
 After experimenting with a variety of different project layouts we have found that the following works quite well for NodeJS projects:
 
-The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibilty of the developer needing to change the contents of that directory) and a breif description.
+The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibility of the developer needing to change the contents of that directory) and a brief description.
 
 | Path                                                | Edit chance | Description |
 |-----------------------------------------------------|:-----------:| ------------|
@@ -324,7 +324,7 @@ The project tree breakdown is listed below. For each path an 'edit chance' is gi
 | `/bower_components/`                                | Never[1]    | Install directory for all Bower controlled packages |
 | `/build/`                                           | Never[2]    | Generated files directory |
 | `/config/`                                          | Rare        | Storage for all config scripts read at startup, see `global.js` for default config setup. Other files are read depending on the `NODE_ENV` setting |
-| `/config/global.js`                                 | Never       | Base config file showing default variables subsequently overriden by each `NODE_ENV` config file |
+| `/config/global.js`                                 | Never       | Base config file showing default variables subsequently overridden by each `NODE_ENV` config file |
 | `/config/private.js`                                | Rare        | Private config details. This file is listed in `.gitignore` and should *never* be checked in to GitHub as it can contain private details - e.g. database connection passwords or API keys |
 | `/controllers/`                                     | Common[3]   | All Express controllers (one per JS file) |
 | `/models/`                                          | Common      | Schema and method definitions for all project models (one per JS file) |
@@ -363,14 +363,14 @@ Project layout
 --------------
 After experimenting with a variety of different project layouts we have found that the following works quite well for AngularJS projects:
 
-The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibilty of the developer needing to change the contents of that directory) and a breif description.
+The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibility of the developer needing to change the contents of that directory) and a brief description.
 
 | Path                                                | Edit chance | Description |
 |-----------------------------------------------------|:-----------:| ------------|
 | `/`                                                 | Rare        | Root project directory |
 | `/app/`                                             | Common      | Root Angular directory |
-| `/app/app.js`                                       | Rare        | Main Angular initalizer file |
-| `/app/routes.js`                                    | Common[1]   | Main Angular initalizer file |
+| `/app/app.js`                                       | Rare        | Main Angular initializer file |
+| `/app/routes.js`                                    | Common[1]   | Main Angular initializer file |
 | `/app/controllers/`                                 | Common      | Angular controller directory |
 | `/app/controllers/global.js`                        | Common[2]   | Angular rootScope controller |
 | `/app/directives/`                                  | Common      | Angular directives directory |
@@ -432,7 +432,7 @@ DevOps
 > 
 > So... Since a day's downtime could run into thousands of dollars of expenses even for a minor fault, don't break the system.
 
-DevOps is primerily a position specializing in the deployment and maintenance of live systems in an on-going basis (i.e. not just deploy and forget like most website uploads).
+DevOps is primarily a position specializing in the deployment and maintenance of live systems in an on-going basis (i.e. not just deploy and forget like most website uploads).
 
 For larger projects where MFDC is in some way involved with development and making sure the thing still works (aka operations) there are a number of additional considerations that need to be made. Fundamentally, developers are no longer just builders who complete a task list, but are instead actively responsible for achieving two goals: Making sure existing functionality is not interrupted, making sure new deployments are achieved and most importantly, users are happy. 
 
@@ -451,7 +451,7 @@ All DevOps people need to:
 
 **Branching**
 
-MFDC doesn't have an official position on branching, but its often helpful when making significant system changes to branch the system with Git, achieve the changes and then remerge them back into the main branch. _However_, make sure all the developers on the project understand this, lack of familiarity with branching by a junior developer will cause merry hell. 
+MFDC doesn't have an official position on branching, but its often helpful when making significant system changes to branch the system with Git, achieve the changes and then re-merge them back into the main branch. _However_, make sure all the developers on the project understand this, lack of familiarity with branching by a junior developer will cause merry hell. 
 
 
 **Initial deployment**
@@ -474,14 +474,14 @@ Any modification to the database will critically change the live system. Running
 
 1. Database Schema changes are all critically important. Track every modification of an existing system because deployment of the software without corresponding live schema updates is critical.
 2. Ensure database backups before any modifications (as well as generally)
-3. Create database update sql files with a list of updates to run on the production server and _test them_.
+3. Create database update SQL files with a list of updates to run on the production server and _test them_.
 
 
 **Disaster Fallout and blame**
 
-Things break, when they do its the DevOps responsibility to fix it immediately, no matter who's at fault, the time of day or who's on call. Then find out where, how, when and what the leadup to the event was.
+Things break, when they do its the DevOps responsibility to fix it immediately, no matter who's at fault, the time of day or who's on call. Then find out where, how, when and what the lead-up to the event was.
 
-* Remember everything is trackable through Git, so it's easy to figure out who wrote the line of code which broke the server, however, remember that whoever was in charge of deployment is ultimately responsible for the live build.
+* Remember everything is traceable through Git, so it's easy to figure out who wrote the line of code which broke the server, however, remember that whoever was in charge of deployment is ultimately responsible for the live build.
 * After fixing, discuss what went wrong with all stakeholders and discuss how to avoid this in future. Future prevention is more important than blame. 
 
 
@@ -505,14 +505,14 @@ Support
 > PICNIC (Problem in chair not in computer)
 > - General use acronym indicating a user is at fault
 
-IT support can broadly be seperated into three tiers: 1 though 3.
+IT support can broadly be separated into three tiers: 1 though 3.
 
 | Tier   | Also called                   | Description                                       |
 |--------|-------------------------------|---------------------------------------------------|
 | Tier 1 | Helpdesk / Helldesk           | First point of contact for the general public. Common questions and queries |
 | Tier 2 | Troubleshooting / Deployment  | Generally 'the unseen' of IT. These are either the superiors (in experience) to Tier 1s or people setting up architectures (e.g. outfitting an office with hardware).
-| Tier 3 | SysAdmins                     | Someone who normally administers the most complex systems in the infrastucture.
-| Tier 4 | Externals                     | Not part of the usual Tier 1 - 3 this tier can be refered to when the problem exists outside of the infrastructure e.g. external vendors.
+| Tier 3 | SysAdmins                     | Someone who normally administers the most complex systems in the infrastructure.
+| Tier 4 | Externals                     | Not part of the usual Tier 1 - 3 this tier can be referred to when the problem exists outside of the infrastructure e.g. external vendors.
 
 
 Clients
@@ -607,8 +607,8 @@ The key point with PHP is that the language is pretty much a sloppy mess and any
 
 The following phrases should set off alarms:
 
-* "We don't believe in frameworks or don't use them" - Everyone is entitled to their opinion of course but this is where unmaintainable messes of code happen. If he can justify his decisions then everything is well, if not it is a good warning he hasn't looked beyond his own skill set.
-* "I use my own framework" - This suggests someone who is at least proficient in the language but in the long run gives you even more of the problems associated than using a popular but lesser framework. Imagine someone saying "Well I wrote the book you wanted but did it in my own never-documented version of Gaelic. Now I'm leaving - good luck". As with the above, if a justification can be given then all is well.
+* "We don't believe in frameworks or don't use them" - Everyone is entitled to their opinion of course but this is where unmaintainable messes of code happen. If he can justify his decisions then thats ok, if not it is a good warning he hasn't looked beyond his own skill set.
+* "I use my own framework" - This suggests someone who is at least proficient in the language but in the long run gives you even more of the problems associated than using a popular but lesser framework. Imagine someone saying "Well I wrote the book you wanted but did it in my own never-documented version of Gaelic. Now I'm leaving - good luck". As with the above, if a justification can be given then thats fine.
 * "I do SEO" - SEO is to programming what HTML is to code - its not. This is only said by people who understand neither. If he has it listed on his CV as a sidenote then all is well. If he makes a big deal about it or it forms the central part of his skills - you may have a problem.
 
 
@@ -620,7 +620,8 @@ If the interviewee answers 'yes' to any of the following questions, don't bother
 * Have you ever named a function starting with "my", or your own name?
 * Do you think VCS commit messages are optional?
 * Have you ever written try/catch with an empty catch block?
-* Have you ever written a CMS entirely with PL/SQL
+* Have you ever written a CMS entirely with PL/SQL?
+* Have you obtained a Microsoft Certification and if so did you pay for it yourself?
 
 Other useful questions can be found at https://github.com/ChiperSoft/InterviewThis/blob/master/InterviewThis.md
 
