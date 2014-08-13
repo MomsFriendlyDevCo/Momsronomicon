@@ -613,8 +613,25 @@ Further reading
 The below is some recommended readings for various technologies.
 MFDC usually has all of the book recommendations in both PDF and dead-tree formats
 
-* **PHP** - [Professional CodeIgniter](http://www.amazon.com/Professional-CodeIgniter-Thomas-Myer/dp/0470282452/ref=sr_1_1?ie=UTF8&qid=1399350667&sr=8-1&keywords=professional+codeigniter)
-* **JavaScript/AngularJS** - [AngularJS](http://www.amazon.com/AngularJS-Brad-Green/dp/1449344852/ref=sr_1_4?ie=UTF8&qid=1399350683&sr=8-4&keywords=angularjs) also [ng-book](https://www.ng-book.com). [AngularJS-StyleGuide](https://github.com/johnpapa/angularjs-styleguide) has some good (but advanced) tips for laying out AngularJS modules.
+PHP
+---
+
+* [Book - Professional CodeIgniter](http://www.amazon.com/Professional-CodeIgniter-Thomas-Myer/dp/0470282452/ref=sr_1_1?ie=UTF8&qid=1399350667&sr=8-1&keywords=professional+codeigniter)
+
+
+JavaScript / AngularJS
+----------------------
+
+* [Book - AngularJS](http://www.amazon.com/AngularJS-Brad-Green/dp/1449344852/ref=sr_1_4?ie=UTF8&qid=1399350683&sr=8-4&keywords=angularjs)
+* [Book - ng-book](https://www.ng-book.com)
+* [AngularJS-StyleGuide](https://github.com/johnpapa/angularjs-styleguide) has some good (but advanced) tips for laying out AngularJS modules
+* [Scotch.io](http://scotch.io) has an exceptionally good set of short articles on AngularJS functionality.
+
+
+JavaScript / NodeJS
+-------------------
+
+* [Book - Practical Node.js](http://www.amazon.com/Practical-Node-js-Building-Real-World-Scalable/dp/1430265957/)
 
 
 Other style guides
@@ -675,6 +692,7 @@ Glossary
 | Dev                   | Developer. You.
 | DevOps                | A different breed of a developer. DevOps is primerily concerned with system deployment and maintenance of Dev produced products.
 | Epochs / Epoc         | A method of storing time. An Unix Epoch is equal to the number of seconds since 1970-01-01 00:00:00 in UTC
+| ERD                   | Entity Relationship Diagram. A typical diagram showing the layout of a relational database structure
 | Git                   | A package management system. Known for being developed by Linus Torvalds and its excessive use of tree diagrams in its documentation.
 | GitHub                | Website specializing in the storage of Git Repos
 | HLL                   | Higher-level-language. Any modern programming language such as PHP or JavaScript
