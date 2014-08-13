@@ -385,28 +385,10 @@ Notes:
 2. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
 
 
-General tips
-============
-> The easiest method to compute newbie programmer specific hash is to sit them in front of VI and ask them to quit.
-> - MC, The author
-
-
-Editors
--------
-> I use emacs, which might be thought of as a thermonuclear word processor. It was created by Richard Stallman; enough said. It is written in Lisp, which is the only computer language that is beautiful. It is colossal, and yet it only edits straight ASCII text files, which is to say, no fonts, no boldface, no underlining. In other words, the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text
-> - Neil Stephenson (In the beginning was the command line)
-
-> Vi is a subset of evil
-> - Anon.
-
-Despite any fancy pre-conceived notions there are only two text editors - [Emacs](https://www.gnu.org/software/emacs) and [Vi](http://www.vim.org). All other editors are shallow copies of one of these two - usually implementing less features. These editors pre-date the internet and as such have 
-
-Thats not to say that other editors such as [Notepad++](http://www.notepad-plus-plus.org), [TextPad](http://www.textpad.com/), [Sublime Text](http://www.sublimetext.com) or the new hip-and-trendy [Atom](https://github.com/atom/atom) are necessarily bad, just that they more-or-less duplicate the functionality of either Emacs or Vi and in most ways not to the full degree.
-
 
 Job descriptions
 ================
-This section is to define a few catagories developers can fit into. Sometimes a task may require multiple of these job descriptions, sometimes they may all the the same person.
+This section is to define a few categories developers can fit into. Sometimes a task may require multiple of these job descriptions, sometimes they may all the same person.
 
 
 Business Analysts (BAs)
@@ -643,6 +625,35 @@ Other style guides
 Misc
 ----
 * **Interview questions** - [InterviewThis](https://github.com/ChiperSoft/InterviewThis/blob/master/InterviewThis.md)
+
+
+Tools
+=====
+> The easiest method to compute newbie programmer specific hash is to sit them in front of VI and ask them to quit.
+> - MC, The author
+
+Design tools
+------------
+We have generally found [Balsamiq mockups](http://balsamiq.com) to be the go-to prototyping system as it provides an excellent user interface capable of generating UI's with little overhead.
+
+For ERD diagrams [LucidChart](http://www.lucidchart.com) is the best option we have found so far.
+
+Everything else should be constrained to standard office tools - MS Office / LibreOffice etc.
+
+
+Editors
+-------
+> I use emacs, which might be thought of as a thermonuclear word processor. It was created by Richard Stallman; enough said. It is written in Lisp, which is the only computer language that is beautiful. It is colossal, and yet it only edits straight ASCII text files, which is to say, no fonts, no boldface, no underlining. In other words, the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text
+> - Neil Stephenson (In the beginning was the command line)
+
+> Vi is a subset of evil
+> - Anon.
+
+Despite any fancy pre-conceived notions there are only two text editors - [Emacs](https://www.gnu.org/software/emacs) and [Vi](http://www.vim.org). All other editors are shallow copies of one of these two - usually implementing less features. These editors pre-date the internet and as such have 
+
+Thats not to say that other editors such as [Notepad++](http://www.notepad-plus-plus.org), [TextPad](http://www.textpad.com/), [Sublime Text](http://www.sublimetext.com) or the new hip-and-trendy [Atom](https://github.com/atom/atom) are necessarily bad, just that they more-or-less duplicate the functionality of either Emacs or Vi and in most ways not to the full degree.
+
+
 
 
 Glossary
