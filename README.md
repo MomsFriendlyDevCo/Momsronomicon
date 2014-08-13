@@ -507,9 +507,9 @@ A handy reference for types of clients.
 
 **The Hoopbringer**
 
-These types of clients are generally smaller single person entities that have had an idea but haven't really thought though the ramifications. Mostly unmotivated they normally cause more work for the company to pursue than they are worth.
+These types of clients are generally smaller single person entities that have had an idea but haven't really thought though the ramifications. Mostly unmotivated to do anything other than talk about their idea, they normally cause more work for the company to pursue than they are worth.
 
-Counteracted by identifying time lines and budgets in order to determine if there is an actual project. Suggesting a paid period of initial consultation (even if the money is minor) is a good barrier to determine if the client is serious.
+Counteracted by identifying timelines and budgets in order to determine if there is an actual project. Suggesting a paid period of initial consultation (even if the money is minor) is a good barrier to determine if the client is serious.
 
 
 **The Helicopter**
