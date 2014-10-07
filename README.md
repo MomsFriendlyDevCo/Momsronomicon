@@ -648,10 +648,10 @@ Job description
 A general use job description suitable for web-devs.
 
 	Due to an upswing in projects we are seeking a coder with moderate to
-	expert level expereience with PHP and specifically the CodeIgniter
-	framework. Other skills such as MySQL or general *nix experience are
-	desirable but non-essencial if the candidate is willing to learn new
-	skills.
+	expert level expereience of PHP and/or NodeJS (specifically the
+	CodeIgniter and ExpressJS frameworks respectively). Other skills such
+	as database knowledge or general *nix experience are desirable but
+	non-essencial if the candidate is willing to learn new skills.
 
 
 	Essential skill set:
