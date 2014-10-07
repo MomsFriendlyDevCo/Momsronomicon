@@ -656,23 +656,23 @@ A general use job description suitable for web-devs.
 
 	Essential skill set:
 	* Intermediate written English skills
-	* PHP 5 programming experience
+	* PHP 5 programming experience OR NodeJS programming experience
 	* Experience with MVC systems or other structured framework models
 	* HTML, CSS and JavaScript experience
-	* jQuery knowledge
+	* Frontend framework knowledge - jQuery, Angular, Ember, Backbone or similar
 
 
 	Desirable skills:
 	* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
 	* Experience of the PHP MVC framework CodeIgniter or equivelent (e.g. CakePHP, Symfony, Laravel)
-	* MySQL 5.
+	* Some database knowledge - MySQL, Mongo, Redis or similar
 	* Expereince of a frontend design framework (ideally Bootstrap)
 	* Expereince of a frontend framework stack (ideally Angular)
 	* Experience with HTML5 + mobile app frameworks (ideally jQuery Mobile, Sencha or Ratchet).
-	* *nix knowledge is considered a plus.
-	* Familiarity with inline documentation systems - specicially PHPDoc.
-	* General networking knowledge.
-	* Extra skills that may be useful: BASH coding, general *nix console usage.
+	* *nix knowledge is considered a definite plus
+	* Familiarity with inline documentation systems - specicially PHPDoc, JSDoc
+	* General networking knowledge
+	* Extra skills that may be useful: BASH coding, general *nix console usage
 
 
 Past projects
