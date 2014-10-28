@@ -824,14 +824,3 @@ Glossary
 | Voodoo                | "I fixed it and I have no idea how".
 | WordPress             | CMS usually dedicated to smaller, static paged projects.
 
-
-
-TODO
-====
-* Basecamp Inc. how to speak to clients
-* Design process Inc. Balsamiq
-* Useful libraries: Waveform, Joyst
-* Makefile instructions
-* Cpanel - temporary subdomains and main accounts
-* Timesheets
-* PHP / JS Ternarys
