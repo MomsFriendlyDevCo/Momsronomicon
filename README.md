@@ -360,9 +360,7 @@ Frontend coding style
 ---------------------
 Most of the same JavaScript styles under the [NodeJS backend chapter](#javascript-coding-style) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
 
-FIXME
-
-Stuff you might not know about AngularJS:
+Miscellaneous stuff you might not know about AngularJS:
 
 * `{{::foo}}` will template 'foo' exactly once and never update it again - this makes the DOM lightning fast if you only want Angular to insert the value of a variable once.
 * Adding `track by` to `ng-repeat` elements hugely speeds up DOM refreshes when using repeats e.g. `<div ng-repeat="user in users track by user._id"></div>`. ngRepeats normal behaviour is to remove all elements and re-insert on an array change, using `track by` allows inserts and removals of elements but leaves existing DOM elements alone - preventing costly DOM removal/reinsert behaviour.
