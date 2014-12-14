@@ -18,6 +18,8 @@ NodeJS is the current preferred method of project development at Moms. The tempt
 
 PHP Dev Stack
 -------------
+**NOTE:** We are moving _away_ from PHP for all future projects. See the [NodeJS Dev Stack](#NodeJS Dev Stack) section for current practicles. This section is left here for reference.
+
 The PHP Dev stack uses the following:
 
 * Linux based web-hosting using Apache
