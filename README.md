@@ -58,6 +58,15 @@ The NodeJS Dev stack uses the following:
 More about NodeJS projects can be found in the [Backend NodeJS projects](#backend-nodejs-projects) chapter.
 
 
+Other useful NPM modules include:
+
+* [async](https://www.npmjs.com/package/async)
+* [lodash](https://www.npmjs.com/package/lodash)
+* [mongoose-scenario](https://www.npmjs.com/package/mongoose-scenario)
+* [passport](https://www.npmjs.com/package/passport)
+* [tape](https://www.npmjs.com/package/tape)
+
+
 Starter projects
 ----------------
 A frequently asked question is for an example project which allows the newbie programmer to quickly explore a new environment.
