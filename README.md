@@ -30,7 +30,7 @@ The PHP Dev stack uses the following:
 * [CodeIgniter](http://codeigniter.com/user_guide) - An MVC framework for PHP
 * Git / [GitHub](https://github.com) - For project management
 
-I wouldn't worry about most of the above if you've not come across them before. The largest hurdle will be picking up CodeIgniter first.
+Don't worry about most of the above if you've not come across them before. The largest hurdle will be picking up CodeIgniter first.
 
 [CodeIgniter](http://codeigniter.com/user_guide) is an [MVC framework](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) for PHP.
 PHP is a programming language that, as you may already know, can quickly get out of hand when projects grow to anything more than one page websites. PHP is not alone in this, most higher level languages (HLLs) usually have the language as a baseline then add a framework to implement a specific function. For example Perl is a programing language Mason is its framework for generating web pages. JavaScript/NodeJS is a language, Express is the framework for web apps etc.
