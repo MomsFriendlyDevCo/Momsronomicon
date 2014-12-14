@@ -236,6 +236,7 @@ The following commands pasted into a Bash shell should set everything up on a De
 	sudo apt-get install -y lamp-server^
 	sudo perl -pi -e 's/^display_errors = .*$/display_errors = On/g' /etc/php5/apache2/php.ini
 	sudo perl -pi -e 's/^short_open_tag = .*$/short_open_tag = On/g' /etc/php5/apache2/php.ini
+	sudo perl -pi -e 's/^upload_max_filesize = .*$/upload_max_filesize = 32M/g' /etc/php5/apache2/php.ini
 	sudo perl -pi -e 's/AllowOverride .+$/AllowOverride all/g' /etc/apache2/sites-available/*default*
 	sudo ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 	sudo service apache2 restart
