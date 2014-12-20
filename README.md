@@ -721,13 +721,21 @@ If the interviewee answers 'yes' to any of the following questions, don't bother
 * Have you ever written a CMS entirely with PL/SQL?
 * Have you obtained a Microsoft Certification and if so did you pay for it yourself?
 
-Other useful questions can be found at https://github.com/ChiperSoft/InterviewThis/blob/master/InterviewThis.md
+Other useful questions or interview techniques can be found in [Further reading](#further-reading).
+
 
 
 Further reading
 ===============
 The below is some recommended readings for various technologies.
 MFDC usually has all of the book recommendations in both PDF and dead-tree formats
+
+Interviewing
+------------
+
+* [InterviewThis](https://github.com/ChiperSoft/InterviewThis/blob/master/InterviewThis.md) - Generic dev questions
+* [Front end Developer Interview Questions](https://github.com/h5bp/Front end Developer Interview Questions) - Questions specific to front-end dev work such as Angular work
+
 
 PHP
 ---
