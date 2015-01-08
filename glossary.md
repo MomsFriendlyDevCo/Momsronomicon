@@ -42,3 +42,5 @@ Glossary
 | Voodoo                | "I fixed it and I have no idea how".
 | WordPress             | CMS usually dedicated to smaller, static paged projects.
 
+
+**[Back to Table of Contents](README.md)**

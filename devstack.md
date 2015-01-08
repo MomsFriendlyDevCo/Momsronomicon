@@ -7,5 +7,4 @@ PHP projects are largely legacy projects that are slowly being phased out. Its r
 NodeJS is the current preferred method of project development at Moms. The temptation is to assume that since NodeJS is JavaScript it must behave exactly the same as regular browser JavaScript - this is not true, there are quite a few major differences. Because of this we treat frontend (i.e. what the browser does) and backend (i.e. what the server does) as two entirely different programming environments.
 
 
-1. [PHP Dev Stack](devstack-php.md)
-2. [Node Dev Stack](devstack-node.md)
+**[Back to Table of Contents](README.md)**

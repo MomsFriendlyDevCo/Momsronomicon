@@ -21,3 +21,6 @@ Other useful NPM modules include:
 * [mongoose-scenario](https://www.npmjs.com/package/mongoose-scenario)
 * [passport](https://www.npmjs.com/package/passport)
 * [tape](https://www.npmjs.com/package/tape)
+
+
+**[Back to Table of Contents](README.md)**

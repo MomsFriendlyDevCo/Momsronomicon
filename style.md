@@ -8,3 +8,6 @@ The following is the recommended style for coding. MFDC is a small company with 
 * **Inline documentation** - Please learn about [phpDoc](http://phpdoc.org/), [jsdoc](https://github.com/jsdoc3/jsdoc) or one of the other inline documentation systems. See any of our existing projects for examples. Its not necessary to document every little thing, but documentation should be atomic - i.e. its either there and complete (listing all `@param` and `@return` parameters at a minimum) or not present at all. *Do not have half-completed documentation* as this is often worse than having none at all.
 
 See each individual project type in the next section for language specific styles.
+
+
+**[Back to Table of Contents](README.md)**

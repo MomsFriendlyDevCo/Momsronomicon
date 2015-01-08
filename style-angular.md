@@ -38,3 +38,4 @@ Notes:
 2. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
 
 
+**[Back to Table of Contents](README.md)**

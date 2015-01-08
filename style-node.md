@@ -41,3 +41,4 @@ JavaScript coding style
 * **Var** - Var must always be used in each function otherwise a variable becomes global (JS is the only language that does this). If you don't know what `var` means, learn.
 
 
+**[Back to Table of Contents](README.md)**

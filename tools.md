@@ -48,3 +48,6 @@ General tips:
 		* `REVERT: xxx` - Revert of a previous commit (Git uses this prefix automatically anyway)
 * Branching is only necessary on 'live' projects or if you are making an especially large commit that may break things. If the project is being developed and it is not mission critical or live then committing to master is good as it allows everyone to test everyone elses code.
 * Do not push broken code _ever_, under any circumstances. A push should indicate that the code you are pushing has been completed and is ready at least for testing. Buggy or broken code that breaks everything will result in the WOM (Wrath of Matt).
+
+
+**[Back to Table of Contents](README.md)**

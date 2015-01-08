@@ -166,3 +166,5 @@ Please use the standard C syntax rather than the alternate PHP syntax:
 	<div class="alert alert-info">No widgets found</div>
 	<? endif: ?>
 
+
+**[Back to Table of Contents](README.md)**

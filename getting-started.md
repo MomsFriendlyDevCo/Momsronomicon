@@ -13,3 +13,4 @@ Some ideas (listed beginner to advanced):
 * **User management system (higher level)** - Building off the above idea of a login system is the extended concept of an admin managing user accounts. This includes the ability to list, edit, create and delete accounts as per the CRUD / BREAD methodologies listed below.
 
 
+**[Back to Table of Contents](README.md)**

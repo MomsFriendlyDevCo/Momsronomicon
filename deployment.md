@@ -58,3 +58,6 @@ Fantastico can be found under the 'Software / Services' panel in the sites cPane
 Use Fantasico to quickly setup common site types like Wordpress, ZenCart or generally any other PHP based site:
 
 ![Fantastico](img/cpanel/05-fantastico.png)
+
+
+**[Back to Table of Contents](README.md)**
