@@ -33,6 +33,12 @@ JavaScript / NodeJS
 * [Book - Practical Node.js](http://www.amazon.com/Practical-Node-js-Building-Real-World-Scalable/dp/1430265957/)
 
 
+Gulp
+----
+
+* [MFDC Gulpfiles](https://github.com/MomsFriendlyDevCo/Gulp)
+
+
 Other style guides
 ------------------
 * [Googles JavaScript style guide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
