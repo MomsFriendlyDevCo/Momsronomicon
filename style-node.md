@@ -10,22 +10,28 @@ After experimenting with a variety of different project layouts we have found th
 
 The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibility of the developer needing to change the contents of that directory) and a brief description.
 
-| Path                                                | Edit chance | Description |
-|-----------------------------------------------------|:-----------:| ------------|
-| `/`                                                 | Rare        | Root project directory |
-| `/app/`                                             | Common      | Root Angular directory. See the [Angular](#frontend-javascript-projects) chapter for more details |
-| `/bower_components/`                                | Never[1]    | Install directory for all Bower controlled packages |
-| `/build/`                                           | Never[2]    | Generated files directory |
-| `/config/`                                          | Rare        | Storage for all config scripts read at startup, see `global.js` for default config setup. Other files are read depending on the `NODE_ENV` setting |
-| `/config/global.js`                                 | Never       | Base config file showing default variables subsequently overridden by each `NODE_ENV` config file |
-| `/config/private.js`                                | Rare        | Private config details. This file is listed in `.gitignore` and should *never* be checked in to GitHub as it can contain private details - e.g. database connection passwords or API keys |
-| `/controllers/`                                     | Common[3]   | All Express controllers (one per JS file) |
-| `/models/`                                          | Common      | Schema and method definitions for all project models (one per JS file) |
-| `/models/data/`                                     | Low         | Sample population data for all models |
-| `/node_modules/`                                    | Never[1]    | Install directory for all NPM controlled packages |
-| `/public/`                                          | Common      | Directory containing all static files |
-| `/views/`                                           | Common      | Directory containing all dynamically generated files |
-| `/views/layouts/`                                   | Low         | Main layout template directories (one per JS file) |
+| Path                     | Edit chance | Description |
+|--------------------------|:-----------:| ------------|
+| `/`                      | Rare        | Root project directory |
+| `/app/`                  | Common      | Root Angular directory. See the [Angular](style-angular.md) chapter for more details |
+| `/bower_components/`     | Never[1]    | Install directory for all Bower controlled packages |
+| `/build/`                | Never[2]    | Generated files directory |
+| `/config/`               | Rare        | Storage for all config scripts read at startup, see `/config/index.js` for default config setup. Other files are read depending on the `NODE_ENV` setting |
+| `/config/index.js`       | Never       | Base config file showing default variables subsequently overridden by each `NODE_ENV` config file |
+| `/config/private.js`     | Rare        | Private config details. This file is listed in `.gitignore` and should *never* be checked in to GitHub as it can contain private details - e.g. database connection passwords or API keys |
+| `/controllers/`          | Common[3]   | All Express controllers (one per JS file) |
+| `/data/`                 | Rare        | Optional data dump directory. If binary files (e.g. image uploads) are used in the project they usually end up in a subdirectory here. |
+| `/docs/`                 | Low         | Any miscelanious files not relevent to the operation of the project but which need to be retained e.g. scope documents, ERD diagrams |
+| `/gulpfile.js`           | Rare        | Main Gulp build-system config file |
+| `/gulp-tasks/`           | Rare        | Additional Gulp build-system config files |
+| `/models/`               | Common      | Schema and method definitions for all project models (one per JS file) |
+| `/models/scenarios/`     | Common      | Sample population data for all models, created by [Mongose-Scenario](https://github.com/hash-bang/Node-Mongoose-Scenario) |
+| `/node_modules/`         | Never[1]    | Install directory for all NPM controlled packages |
+| `/public/`               | Common      | Directory containing all static files |
+| `/public/img`            | Common      | Common location for all images files (addressed as `/img/myfile.png` in HTML files) |
+| `/views/`                | Common      | Directory containing all dynamically generated files |
+| `/views/layouts/`        | Low         | Main layout template directories (one per JS file) |
+| `/views/partials/`       | Common      | Main partials files used by Angular to render page templates |
 
 
 Notes:
