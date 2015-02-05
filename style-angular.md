@@ -4,7 +4,7 @@ When we refer to 'Frontend JavaScript' we usually mean [AngularJS](http://angula
 
 Frontend coding style
 ---------------------
-Most of the same JavaScript styles under the [NodeJS backend chapter](#javascript-coding-style) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
+Most of the same JavaScript styles under the [NodeJS coding section](style-node.js) are also applicable to Angular / Frontend JavaScript. The below is specific to Angular projects.
 
 Miscellaneous stuff you might not know about AngularJS:
 

@@ -11,7 +11,7 @@ The NodeJS Dev stack uses the following:
 * [GulpJS](http://gulpjs.com) - Make files and build scripts
 * Git / [GitHub](https://github.com) - For project management
 
-More about NodeJS projects can be found in the [Backend NodeJS projects](#backend-nodejs-projects) chapter.
+More about NodeJS projects can be found in the [Backend NodeJS projects](style-node.md) section.
 
 
 Other useful NPM modules include:

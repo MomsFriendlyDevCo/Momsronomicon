@@ -6,7 +6,7 @@ Interviewing Devs
 Alternate title for this section: "How to tell if a potential developer really knows what he is doing".
 This section is intended as a rough guide to the dev skills we are looking for.
 
-You may also find the [Starter projects](#starter-projects) section useful as it also provides some sample projects to give to potential employees.
+You may also find the [Starter projects](getting-started.md) section useful as it also provides some sample projects to give to potential employees.
 
 
 Job description
@@ -76,7 +76,7 @@ If the interviewee answers 'yes' to any of the following questions, don't bother
 * Have you ever written a CMS entirely with PL/SQL?
 * Have you obtained a Microsoft Certification and if so did you pay for it yourself?
 
-Other useful questions or interview techniques can be found in [Further reading](#further-reading).
+Other useful questions or interview techniques can be found in [Further reading](futher-reading.md).
 
 
 **[Back to Table of Contents](README.md)**

@@ -4,13 +4,13 @@ Glossary
 |-----------------------|-------------------------------------------------------|
 | Backend               | See server.
 | BLOB                  | Binary Large OBject - A large unspecified amount of data such as an image file in binary form.
-| Bower                 | A package manager aim at front-end components developed by Twitter. See [Package managers](#package-managers)
+| Bower                 | A package manager aim at front-end components developed by Twitter. See [Package managers](projects.md)
 | Bugfix                | A code commit that fixes a bug.
 | Client                | Can either mean the person paying for a project OR in the context of "client end" this means stuff the browser runs like JavaScript.
 | CMS                   | Content Management System. See WordPress.
 | CodeIgniter           | MFDC's MVC PHP framework of choice.
 | Commit                | A checked in, logged Git instance. This should correspond with a feature or bugfix.
-| Composer              | A package manager aimed specifically at PHP. See [Package managers](#package-managers)
+| Composer              | A package manager aimed specifically at PHP. See [Package managers](projects.md)
 | Controller            | A part of MVC. A controller is the first point of call in a project and usually represents a plural noun e.g. 'users'.
 | CRUD                  | Create, Read, Update, Destroy - The four operations that (most) controllers in an MVC application should implement for all tables to be considered complete.
 | DB                    | DataBase. Used interchangeably.
@@ -28,7 +28,7 @@ Glossary
 | Model                 | A part of MVC. A model is the gateway to the database.
 | MVC                   | Model-View-Controller. A strategy to develop reasonably clean applications. 
 | MySQL                 | Database server of choice. Now owned by Oracle but has yet to turn evil.
-| NPM                   | Node Package Manager. Used only for JavaScript heavy projects. See [Package managers](#package-managers)
+| NPM                   | Node Package Manager. Used only for JavaScript heavy projects. See [Package managers](projects.md)
 | OAuth                 | A method of quickly turning a project into a living nightmare. Developed by Facebook to assist cross-site logins.
 | OO                    | Object Orientation. A manner of programming similar to bureaucracy where everyone points the finger at everyone else and no-one seems to do any work.
 | PHP                   | A minor yet necessary evil. Also an interpreted programing language for server side development.
