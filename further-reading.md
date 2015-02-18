@@ -25,6 +25,7 @@ JavaScript / AngularJS
 * [AngularJS-StyleGuide](https://github.com/johnpapa/angularjs-styleguide) has some good (but advanced) tips for laying out AngularJS modules
 * [Scotch.io](http://scotch.io) has an exceptionally good set of short articles on AngularJS functionality.
 * [Reddit Angular wiki](http://www.reddit.com/r/angularjs/wiki/index)
+* [YouTube - Learn and Understand AngularJS](https://www.youtube.com/watch?v=ejBkOjEG6F0&spfreload=1)
 
 
 JavaScript / NodeJS
