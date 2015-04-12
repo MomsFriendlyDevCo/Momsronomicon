@@ -1,12 +1,63 @@
 Hosting with DigitalOcean
 =========================
 
-Server provisioning
--------------------
+Generic server provisioning
+---------------------------
+To setup a Digital Ocean instance with Node support follow the below steps. If the VM is intended to host a LAMP stack see the next section for tips on zPanel instance setups.
+
+1. Create a new Digital Ocean VM instance
+	* Name the machine after the TLD prefix of the domain (e.g. if the domain is example.com the name shoudl be 'example')
+	* Generally the smallest size VM is acceptable in most cases
+	* Ensure that 'Enable Backups' is selected
+	* Select Singapore as the location
+	* Ubuntu is recommended as the OS
+	* Add all SSH access keys to the new VM instance
+
+2. SSH into the new machine and run the following to grab the usual set of init scripts
+
+	sudo apt-get install -y git
+	git clone git@github.com:MomsFriendlyDevCo/Init.git
+	cd Init
+
+3. Run the init rule appropriate to the server role. In the majority of cases this will be:
+
+	./ROLE-server-node
+
+4. Setup the A record DNS of the domain to point at the IP of the VM
+
+5. Clone the git repo of the site you wish to host into the `root` home directory:
+
+	git clone <repo>
+	cd <repo-dir>
+
+7. Run whatever setup scripts are required for the project, these should be listed in the repo `README.md` file but are *usually*:
+
+	npm install
+	bower install
+	gulp db
+
+6. Use [Forever](https://www.npmjs.com/package/forever) to run the main script
+
+	forever start server.js
+
+7. Check that the website now works correctly
+
+
+zPanel web hosting
+==================
+[zPanel](http://www.zpanelcp.com) is a Free and Open Source equivelent to cPanel which allows generic hosting of LAMP based websites.
+
+
+zPanel Server provisioning
+--------------------------
 To setup a micro Digital Ocean instance follow these steps:
 
-1. Create a new Digital Ocean VM instance called `webX` (where 'X' is the next available number)
+1. Create a new Digital Ocean VM instance
+	* Name the machine `webX` (where 'X' is the next available number)
+	* Generally the smallest size VM is acceptable in most cases
+	* Ensure that 'Enable Backups' is selected
 	* Select Singapore as the location
+	* Ubuntu is recommended as the OS
 	* Add all SSH access keys to the new VM instance
 
 2. Add the DNS entry for the newly created box in the Digital Ocean DNS config area. The format should be `webX.momsfriendlydev.co` with the IP of the newly created instance.
