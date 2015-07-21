@@ -2,7 +2,7 @@ NodeJS Dev Stack
 ================
 The NodeJS Dev stack uses the following:
 
-* Linux based web-hosting using OpenShift or dedicated servers
+* Linux based web-hosting using dedicated VM instances
 * HTML, CSS and JavaScript - the basics of web-page creation
 * [AngularJS](http://angularjs.org) - Frontend JS framework
 * [NodeJS platform](http://nodejs.org) - Backend JS language
