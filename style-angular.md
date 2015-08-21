@@ -58,13 +58,22 @@ Notes:
 2. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
 
 
+Further reading
+---------------
+The following external references are recommended:
+
+* [Angular Style Guide](https://github.com/johnpapa/angular-styleguide)
+* [ES6 Arrow Syntax](http://shivganesh.com/2015/08/es6-arrows/) - Some simple effective examples of ES6 arrow syntax
+
+
 External resources
 ------------------
 We find we use the following Angular modules a in most projects:
 
 * [angular-resource](https://github.com/angular/bower-angular-resource)
-* [angular-route](https://github.com/angular/bower-angular-route)
+* [angular-ui-router](http://angular-ui.github.io/ui-router/site)
 * [angular-xenophilous](https://github.com/hash-bang/ng-xenophilous)
+* [ng-mfdc](http://momsfriendlydevco.github.io/ng-mfdc) - Various Angular directives in use at MFDC
 
 
 **[Back to Table of Contents](README.md)**
