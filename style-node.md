@@ -45,6 +45,7 @@ JavaScript coding style
 -----------------------
 
 * **Var** - Var must always be used in each function otherwise a variable becomes global (JS is the only language that does this). If you don't know what `var` means, learn.
+* **NODE_ENV** - A server side Node script should respect `NODE_ENV=production` and act accordingly. Not only are there [significant performance related reasons](http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications) for doing this but also makes the application more predictable - e.g. nesting `gulpIf('production')` style conditions.
 
 
 **[Back to Table of Contents](README.md)**
