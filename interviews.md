@@ -14,10 +14,10 @@ Job description
 A general use job description suitable for web-devs.
 
 	Due to an upswing in projects we are seeking a coder with light to
-	expert level expereience of NodeJS and/or front-end frameworks
+	expert level experience of NodeJS and/or front-end frameworks
 	(specifically ExpressJS and AngularJS frameworks respectively). Other
 	skills such as database knowledge or general *nix experience are desirable
-	but non-essencial if the candidate is willing to learn new skills.
+	but non-essential if the candidate is willing to learn new skills.
 
 
 	Essential skill set:
@@ -30,7 +30,7 @@ A general use job description suitable for web-devs.
 
 	Desirable skills:
 	* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
-	* Some experience of a back-end MVC framework - e.g. ExpressJS, Sails, CodeIgniter CakePHP, Laravel or equivelent 
+	* Some experience of a back-end MVC framework - e.g. ExpressJS, Sails, CodeIgniter CakePHP, Laravel or equivalent 
 	* Some database knowledge - Mongo, MySQL, Redis or similar
 	* Experience of a frontend design framework (ideally Bootstrap)
 	* Experience of a frontend framework stack (ideally Angular)
