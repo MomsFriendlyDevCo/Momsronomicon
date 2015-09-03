@@ -13,19 +13,19 @@ Job description
 ---------------
 A general use job description suitable for web-devs.
 
-	Due to an upswing in projects we are seeking a coder with moderate to
-	expert level expereience of PHP and/or NodeJS (specifically the
-	CodeIgniter and ExpressJS frameworks respectively). Other skills such
-	as database knowledge or general *nix experience are desirable but
-	non-essencial if the candidate is willing to learn new skills.
+	Due to an upswing in projects we are seeking a coder with light to
+	expert level expereience of NodeJS and/or front-end frameworks
+	(specifically ExpressJS and AngularJS frameworks respectively). Other
+	skills such as database knowledge or general *nix experience are desirable
+	but non-essencial if the candidate is willing to learn new skills.
 
 
 	Essential skill set:
 	* Intermediate written English skills
 	* NodeJS programming experience OR front-end JavaScript in general
-	* Experience with MVC systems or other structured framework models
+	* Basic experience with MVC systems or other structured framework models
 	* HTML, CSS and JavaScript experience
-	* Frontend framework knowledge - jQuery, Angular, Ember, Backbone or similar
+	* Front-end framework knowledge - jQuery, Angular, Ember, Backbone or similar
 
 
 	Desirable skills:
