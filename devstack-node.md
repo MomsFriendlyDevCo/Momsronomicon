@@ -13,6 +13,7 @@ The NodeJS Dev stack uses the following:
 Misc software components:
 
 * [Express-Restify-Mongoose](https://www.npmjs.org/package/express-restify-mongoose) - REST 'glue' for Express / Angular
+* [MFDC-REPL](https://github.com/MomsFriendlyDevCo/mfdc-repl) - MFDC's own REPL command line interface
 * [Mongoose-Scenario](https://github.com/hash-bang/Node-Mongoose-Scenario) - Initial database population
 * [PassportJS](http://passportjs.org) - User sessions and authentication
 * [GulpJS](http://gulpjs.com) - Make files and build scripts
