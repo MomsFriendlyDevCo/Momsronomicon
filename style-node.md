@@ -48,4 +48,6 @@ JavaScript coding style
 * **NODE_ENV** - A server side Node script should respect `NODE_ENV=production` and act accordingly. Not only are there [significant performance related reasons](http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications) for doing this but also makes the application more predictable - e.g. nesting `gulpIf('production')` style conditions.
 
 
+See the [NodeJS Dev Stack](devstack-node.md) for information on how to set up a NodeJS environment.
+
 **[Back to Table of Contents](README.md)**
