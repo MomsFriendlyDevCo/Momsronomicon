@@ -129,7 +129,7 @@ Cloning a project and getting started with development can differ from project t
 	npm install
 
 	# Install all Bower (frontend) components
-	bower install
+	bower install --force-latest
 
 	# Setup a blank database
 	gulp db
