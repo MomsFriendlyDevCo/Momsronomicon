@@ -57,6 +57,23 @@ Setting up Node on Linux is a relatively straight forward affair since Linux is 
 
 Now you have NodeJS setup proceed to [Post NodeJS installation](#post-nodejs-installation).
 
+Mac NodeJS setup
+----------------
+
+Firstly get a version of node somehow: 
+
+**Brew method:**
+
+1. Get [brew](http://brew.sh/)
+2. brew install 
+3. `brew install node`
+
+**Stupid point-and-click install method**
+1. [Download and install](https://nodejs.org/en/download/)
+
+**Switching NodeJS versions**
+1. install `n`: `sudo npm install n -g`
+2. change to whatever version of nodeJS you need: `sudo n latest` or `sudo n 0.12.9`
 
 Windows Machines
 ----------------
