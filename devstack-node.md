@@ -57,23 +57,23 @@ Setting up Node on Linux is a relatively straight forward affair since Linux is 
 
 Now you have NodeJS setup proceed to [Post NodeJS installation](#post-nodejs-installation).
 
-Mac NodeJS setup
+
+Mac Machines
 ----------------
+NodeJS can be installed [directly](https://nodejs.org/en/download/) but for other packages and features such as auto-updating it is recommended you use Brew:
 
-Firstly get a version of node somehow: 
+1. Download and install [brew](http://brew.sh)
+2. Open a Terminal (Spotlight > Utilities > Terminal)
+3. Install NodeJS using Brew
 
-**Brew method:**
+	brew install node
 
-1. Get [brew](http://brew.sh/)
-2. brew install 
-3. `brew install node`
+4. Install MongoDB using Brew
 
-**Stupid point-and-click install method**
-1. [Download and install](https://nodejs.org/en/download/)
+	brew install mongodb
 
-**Switching NodeJS versions**
-1. install `n`: `sudo npm install n -g`
-2. change to whatever version of nodeJS you need: `sudo n latest` or `sudo n 0.12.9`
+Now you have NodeJS setup proceed to [Post NodeJS installation](#post-nodejs-installation).
+
 
 Windows Machines
 ----------------
