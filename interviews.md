@@ -46,28 +46,24 @@ Past projects
 > Good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program
 > - Linus Torvalds
 
-If the sites he references are pretty professional and well done - you need to ask him:
+If the sites (s)he references are pretty professional and well done - you need to ask him / her:
 
-* What he has specifically contributed
+* What (s)he has specifically contributed
 * What framework was used with the sites
-* Whether he has any opinions on it or other frameworks
-* Ask for positive and negative points on the framework. Pay particular attention to negatives since this shows he has some compatible experience in other areas.
+* Whether (s)he has any opinions on it or other frameworks
+* Ask for positive and negative points on the framework. Pay particular attention to negatives since this shows (s)he has some compatible experience in other areas.
 
 
-PHP Specific
-------------
-The key point with PHP is that the language is pretty much a sloppy mess and anything developed professionally needs a decent framework to prop it up so you can hand a project off to someone else to maintain.
-
+General Alarms
+--------------
 The following phrases should set off alarms:
 
-* "We don't believe in frameworks or don't use them" - Everyone is entitled to their opinion of course but this is where unmaintainable messes of code happen. If he can justify his decisions then thats ok, if not it is a good warning he hasn't looked beyond his own skill set.
+* "We don't believe in frameworks or don't use them" - Everyone is entitled to their opinion of course but this is where unmaintainable messes of code happen. If (s)he can justify his decisions then thats ok, if not it is a good warning (s)he hasn't looked beyond his own skill set.
 * "I use my own framework" - This suggests someone who is at least proficient in the language but in the long run gives you even more of the problems associated than using a popular but lesser framework. Imagine someone saying "Well I wrote the book you wanted but did it in my own never-documented version of Gaelic. Now I'm leaving - good luck". As with the above, if a justification can be given then thats fine.
-* "I do SEO" - SEO is to programming what HTML is to code - its not. This is only said by people who understand neither. If he has it listed on his CV as a sidenote then all is well. If he makes a big deal about it or it forms the central part of his skills - you may have a problem.
+* "I do SEO" - SEO is to programming what HTML is to code - its not. This is only said by people who understand neither. If (s)he has it listed on his CV as a sidenote then all is well. If (s)he makes a big deal about it or it forms the central part of his skills - you may have a problem.
 
 
-Instant aptitude questions - just add cynicism
-----------------------------------------------
-If the interviewee answers 'yes' to any of the following questions, don't bother to continue the interview:
+If the interviewee answers 'yes' to any of the following questions, it might not be a good idea to continue the interview (all of these are examples of prior interviews):
 
 * Do you think JavaScript and jQuery are the same thing?
 * Have you ever named a function starting with "my", or your own name?
@@ -75,6 +71,7 @@ If the interviewee answers 'yes' to any of the following questions, don't bother
 * Have you ever written try/catch with an empty catch block?
 * Have you ever written a CMS entirely with PL/SQL?
 * Have you obtained a Microsoft Certification and if so did you pay for it yourself?
+
 
 Other useful questions or interview techniques can be found in [Further reading](futher-reading.md).
 
