@@ -28,4 +28,6 @@ Table of contents
 7. [Managing clients](clients.md)
 8. [Further reading](further-reading.md)
 9. [Glossary](glossary.md)
-10. [TODO](TODO.md)
+10. [Misc Guides](guides.md)
+	1. [Tunneling with Linux / MacOSX](tunneling.md)
+11. [TODO](TODO.md)
