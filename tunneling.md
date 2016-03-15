@@ -19,7 +19,7 @@ Please copy the contents of the file `~/.ssh/id_rsa.pub` into an email. The easi
 
 **NOTE 2:** In order to dial *in* to your machine you will need an OpenSSH server running. If you do not have one or are unsure, run `sudo apt-get install -y openssh-server`. If the server is already installed it will exit without doing anything.
 
-MFDC will then need to create an accout on the shared server which you can dial into.
+MFDC will then need to create an account on the shared server which you can dial into.
 
 
 Creating the tunnel
@@ -28,7 +28,22 @@ An SSH tunnel is created by running the following command:
 
 	ssh zapp.mfdc.biz -R 2222:localhost:22
 
-The above command connects to the publically available MFDC office server ("Zapp") then forms a reverse tunnel where port 2222 on Zapp is tunneled into your own PC port 22.
+The above command connects to the publicly available MFDC office server ("Zapp") then forms a reverse tunnel where port 2222 on Zapp is tunneled into your own PC port 22.
+
+**NOTE:** Closing the connection (either by typing `exit` or pressing `Ctrl + D`) will close the tunnel.
+
+
+Configuring a tunnel alias (optional)
+-------------------------------------
+If its likely you are going to be needing a tunnel often you can make an entry in your SSH config which should make setting up a tunnel easier.
+
+Edit the file `~/.ssh/config` (create it if it doesn't exist) and add the entry:
+
+	Host zapp
+		Hostname zapp.mfdc.biz
+		RemoteForward 2222 localhost:22
+
+It is now possible to setup the connection by running `ssh zapp`. Change the `Host zapp` line if you wish to call the connection something else.
 
 
 **[Back to Table of Contents](README.md)**
