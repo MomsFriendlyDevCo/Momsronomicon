@@ -30,4 +30,5 @@ Table of contents
 9. [Glossary](glossary.md)
 10. [Misc Guides](guides.md)
 	1. [Tunneling with Linux / MacOSX](tunneling.md)
+	2. [Setting up SSH keys](ssh-keys.md)
 11. [TODO](TODO.md)
