@@ -32,4 +32,5 @@ Table of contents
 9. [Misc Guides](guides.md)
 	1. [Tunneling with Linux / MacOSX](tunneling.md)
 	2. [Setting up SSH keys](ssh-keys.md)
+	3. [Setting up GMail for your email](gmail.md)
 10. [TODO](TODO.md)
