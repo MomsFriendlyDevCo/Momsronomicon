@@ -41,7 +41,6 @@ In general you will need the following components at a minimum to get a NodeJS p
 3. NPM - Node Package Manager used by NodeJS to install NodeJS modules - you get this free with NodeJS
 4. Git - The revision control system used to manage code
 5. Gulp - The compiler + general dogsbody used to make everything run, installable via NPM
-6. Bower - A front-end package manager, installable via NPM
 
 
 Linux Machines
@@ -135,7 +134,7 @@ The following will adjust NPM so its a little more informative when performing o
 
 The following global NPM packages are recommend but you will find your own prefered combination of tools over time.
 
-	sudo npm install -g bower gulp pm2
+	sudo npm install -g gulp pm2
 
 
 **Project cloning and installation**
@@ -149,9 +148,6 @@ Cloning a project and getting started with development can differ from project t
 
 	# Install all NPM components
 	npm install
-
-	# Install all Bower (frontend) components
-	bower install --force-latest
 
 	# Setup a blank database
 	gulp db

@@ -38,23 +38,23 @@ After experimenting with a variety of different project layouts we have found th
 
 The project tree breakdown is listed below. For each path an 'edit chance' is given (i.e. the possibility of the developer needing to change the contents of that directory) and a brief description.
 
-| Path                                                | Edit chance | Description |
-|-----------------------------------------------------|:-----------:| ------------|
-| `/`                                                 | Rare        | Root project directory |
-| `/app/`                                             | Common      | Root Angular directory |
+| Path                                                | Edit chance | Description                   |
+|-----------------------------------------------------|:-----------:| ------------------------------|
+| `/`                                                 | Rare        | Root project directory        |
+| `/app/`                                             | Common      | Root Angular directory        |
 | `/app/app.js`                                       | Rare        | Main Angular initializer file |
 | `/app/routes.js`                                    | Common[1]   | Main Angular initializer file |
-| `/app/controllers/`                                 | Common      | Angular controller directory |
-| `/app/controllers/global.js`                        | Common[2]   | Angular rootScope controller |
-| `/app/directives/`                                  | Common      | Angular directives directory |
-| `/app/filters/`                                     | Common      | Angular filters directory |
-| `/app/models/`                                      | Common      | Angular models directory |
+| `/app/controllers/`                                 | Common      | Angular controller directory  |
+| `/app/controllers/global.js`                        | Common[2]   | Angular rootScope controller  |
+| `/app/directives/`                                  | Common      | Angular directives directory  |
+| `/app/filters/`                                     | Common      | Angular filters directory     |
+| `/app/models/`                                      | Common      | Angular models directory      |
 
 The above is sometimes subject to change depending on the backend environment or project layout. Sometimes the `/app` directory can be stored as `/js/app` or elsewhere in the file tree. As much as possible the inside of that directory should resemble the above layout though.
 
 Notes:
 
-1. Only applies if using the Angular [ngRoute](https://github.com/angular/bower-angular-route) module.
+1. Only applies if using the Angular [UI-Router](https://github.com/angular-ui/ui-router) module.
 2. The Angular rootScope controller should be attached to the same element as the ng-app directive. e.g. `<body ng-app="app" ng-controller="globalController"></body>`.
 
 
@@ -70,7 +70,7 @@ External resources
 ------------------
 We find we use the following Angular modules a in most projects:
 
-* [angular-resource](https://github.com/angular/bower-angular-resource)
+* [angular-resource](https://docs.angularjs.org/api/ngResource)
 * [angular-ui-router](http://angular-ui.github.io/ui-router/site)
 * [angular-xenophilous](https://github.com/hash-bang/ng-xenophilous)
 * [ng-mfdc](http://momsfriendlydevco.github.io/ng-mfdc) - Various Angular directives in use at MFDC

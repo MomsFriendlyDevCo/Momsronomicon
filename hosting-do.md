@@ -33,7 +33,6 @@ To setup a Digital Ocean instance with Node support follow the below steps. If t
 7. Run whatever setup scripts are required for the project, these should be listed in the repo `README.md` file but are *usually*:
 
 	npm install
-	bower install
 	gulp db
 
 6. Use [Forever](https://www.npmjs.com/package/forever) to run the main script
