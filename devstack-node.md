@@ -132,7 +132,7 @@ The following will adjust NPM so its a little more informative when performing o
 
 **Install some commonly used global NPM packages**
 
-The following global NPM packages are recommend but you will find your own prefered combination of tools over time.
+The following global NPM packages are recommend but you will find your own preferred combination of tools over time.
 
 	sudo npm install -g gulp pm2
 
