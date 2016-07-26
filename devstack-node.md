@@ -4,20 +4,25 @@ The NodeJS Dev stack uses the following:
 
 * Linux based web-hosting using dedicated VM instances
 * HTML, CSS and JavaScript - the basics of web-page creation
+* Git / [GitHub](https://github.com) - Code management
 * [AngularJS](http://angularjs.org) - Frontend JS framework
 * [NodeJS platform](http://nodejs.org) - Backend JS language
 * [ExpressJS](http://expressjs.com) - Backend JS framework
 * [MongoDB](https://www.mongodb.org) - Backend database
-* [Mongoose ODM](http://mongoosejs.com) - Backend database framework
+* [Monoxide](https://github.com/hash-bang/Monoxide) - Backend database wrapper. Functionally identical to [Mongoose](http://mongoosejs.com) (the same APIs can be used with no overhead). Monoxide fixes some common issues MFDC has encounted with Mongoose
+
 
 Misc software components:
 
-* [Express-Restify-Mongoose](https://www.npmjs.org/package/express-restify-mongoose) - REST 'glue' for Express / Angular
-* [MFDC-REPL](https://github.com/MomsFriendlyDevCo/mfdc-repl) - MFDC's own REPL command line interface
-* [Mongoose-Scenario](https://github.com/hash-bang/Node-Mongoose-Scenario) - Initial database population
-* [PassportJS](http://passportjs.org) - User sessions and authentication
-* [GulpJS](http://gulpjs.com) - Make files and build scripts
-* Git / [GitHub](https://github.com) - For project management
+* [async-chainable](https://github.com/hash-bang/async-chainable) - Alternative to the [async](https://github.com/caolan/async) library that provides chainable support for complex workflows
+* [gulp](http://gulpjs.com) - Build scripts, development environment and file monitoring
+* [lodash](http://lodash.com) - General tooling library
+* [mfdc-email](https://github.com/MomsFriendlyDevCo/mfdc-email) - Email sending library configured specifically for MFDC style projects
+* [mfdc-repl](https://github.com/MomsFriendlyDevCo/mfdc-repl) - MFDC's own REPL command line interface. Especially useful for database access as it provides Babel support and user-friendly database access via Monoxide
+* [moment](http://momentjs.com) - Date + time handling library
+* [mongoose-scenario](https://github.com/hash-bang/Node-Mongoose-Scenario) - Initial database population and setup
+* [monoxide](https://github.com/hash-bang/Monoxide) - In addition to its database access functionality, Monoxide can also provide [ReST server](https://github.com/hash-bang/Monoxide#rest-server) capabilities. This is especially useful with the front-end [Angular ngResource](https://docs.angularjs.org/api/ngResource) library
+* [passport](http://passportjs.org) - User sessions and authentication
 
 More about NodeJS projects can be found in the [Backend NodeJS projects](style-node.md) section.
 
