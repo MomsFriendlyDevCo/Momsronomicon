@@ -49,7 +49,7 @@ Secured connection, using SSL: Checked
 
 * Close the window. You do not need to enter a verification code.
 
-[!Confirm window](img/gmail/04-confirm.png)
+![Confirm window](img/gmail/04-confirm.png)
 
 
 * You will shortly receive an email address from Gmail asking you to confirm. Click the link in that email to finish the process.
