@@ -24,4 +24,4 @@ General tips:
 * Do not push broken code _ever_, under any circumstances. A push should indicate that the code you are pushing has been completed and is ready at least for testing. Buggy or broken code that breaks everything will result in the WOM (Wrath of Matt).
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

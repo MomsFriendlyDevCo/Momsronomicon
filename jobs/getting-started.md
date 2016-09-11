@@ -14,4 +14,4 @@ Some ideas (listed beginner to advanced):
 
 See the [NodeJS Dev Stack](../devstack/node.md) for information on how to set up a NodeJS environment.
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

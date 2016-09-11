@@ -8,4 +8,4 @@ There are a couple of variations with hosting:
 3. **App hosting** - Similar to VPS's but managed centrally, these expose an app platform allowing simpler deployments
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

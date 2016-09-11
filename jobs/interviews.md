@@ -76,4 +76,4 @@ If the interviewee answers 'yes' to any of the following questions, it might not
 Other useful questions or interview techniques can be found in [Further reading](../futher-reading.md).
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

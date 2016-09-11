@@ -158,4 +158,4 @@ Cloning a project and getting started with development can differ from project t
 In most cases Gulp should now take over running the day-to-day tasks. For the majority of projects Gulp should automatically recompile scripts, CSS or other resources as you edit them - allowing you to edit the files on the fly.
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

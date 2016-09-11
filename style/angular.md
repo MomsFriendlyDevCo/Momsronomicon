@@ -76,4 +76,4 @@ We find we use the following Angular modules a in most projects:
 * [ng-mfdc](http://momsfriendlydevco.github.io/ng-mfdc) - Various Angular directives in use at MFDC
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

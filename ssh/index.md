@@ -6,4 +6,4 @@ Using SSH to dial into servers
 3. [Remote mounting with SSH](sshfs.md)
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

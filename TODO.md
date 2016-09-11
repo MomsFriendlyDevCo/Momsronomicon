@@ -12,4 +12,4 @@ A list of topics that have yet to be written up.
 * Interview questions: "1) Describe something you built. 2) If you had to do it again from scratch, what would you do differently?"
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

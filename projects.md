@@ -28,4 +28,4 @@ All files (config files and downloaded files for each submodule) should be inclu
 An exception to the above can be made for open-source components (not full projects). For example a widget that belongs in its own Git repo may omit any pre-requisite packages as the package manager will download and install these within the parent project anyway.
 
 
-**[Back to Table of Contents](index.md)**
+**[Back to Table of Contents](README.md)**

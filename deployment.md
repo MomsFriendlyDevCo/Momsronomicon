@@ -60,4 +60,4 @@ Use Fantasico to quickly setup common site types like Wordpress, ZenCart or gene
 ![Fantastico](img/cpanel/05-fantastico.png)
 
 
-**[Back to Table of Contents](index.md)**
+**[Back to Table of Contents](README.md)**

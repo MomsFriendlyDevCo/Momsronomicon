@@ -24,4 +24,4 @@ What I would suggest is to have a read though the [CodeIgniter site](http://code
 More about PHP and CodeIgniter can be found in the [CodeIgniter projects](../style/php.md) section.
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

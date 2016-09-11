@@ -167,4 +167,4 @@ Please use the standard C syntax rather than the alternate PHP syntax:
 	<? endif: ?>
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

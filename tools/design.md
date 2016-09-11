@@ -7,4 +7,4 @@ For ERD diagrams [LucidChart](http://www.lucidchart.com) is the best option we h
 Everything else should be constrained to standard office tools - MS Office / LibreOffice etc.
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

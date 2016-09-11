@@ -15,4 +15,4 @@ The follwing checklist is useful when welcoming a New Dev to the company:
 - [ ] Code like your life depends on it
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

@@ -37,4 +37,4 @@ VI has the added advantage that it is part of the standard set of Unix editors a
 * [Sublime Text](http://www.sublimetext.com) (Win, Mac)
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**

@@ -21,4 +21,4 @@ The easiest way of doing this is to paste the following command:
 What this does is generates a new RSA key specifying no-password. If you want to walk though the process step-by-step you can use the command `ssh-keygen` and answer the prompts youself.
 
 
-**[Back to Table of Contents](../index.md)**
+**[Back to Table of Contents](../README.md)**
