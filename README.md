@@ -21,7 +21,7 @@ Table of contents
 4. [Tools](tools/)
 	1. [Design tools](tools/design.md)
 	2. [Code editors](tools/editors.md)
-	3. [Versioning](tools/git.md)
+	3. [Versioning](tools/versioning.md)
 5. [Hosting](hosting/)
 	1. [DigitalOcean / VMs](hosting/do.md)
 6. [Job Roles](jobs/)
