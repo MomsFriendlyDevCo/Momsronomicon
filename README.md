@@ -18,7 +18,7 @@ Table of contents
 	1. [PHP projects](style/php.md)
 	2. [Node projects](style/node.md)
 	3. [Angular projects](style/angular.md)
-4. [Tools](tools.md)
+4. [Tools](tools/)
 	1. [Design tools](tools/design.md)
 	2. [Code editors](tools/editors.md)
 	3. [Versioning](tools/git.md)
