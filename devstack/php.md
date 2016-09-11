@@ -1,6 +1,6 @@
 PHP Dev Stack
 =============
-**NOTE:** We are moving _away_ from PHP for all future projects. See the [NodeJS Dev Stack](devstack-node.md) section for current practicles. This section is left here for reference.
+**NOTE:** We are moving _away_ from PHP for all future projects. See the [NodeJS Dev Stack](node.md) section for current practicles. This section is left here for reference.
 
 The PHP Dev stack uses the following:
 
@@ -21,7 +21,7 @@ MVC tries to tidy up development by implementing what is known as the [Principle
 
 What I would suggest is to have a read though the [CodeIgniter site](http://codeigniter.com/user_guide). Its generally written in a user friendly way with good [Starter material and videos](http://codeigniter.com/tutorials/). After you think you've got a grip on how everything works try putting together a simple project that involves a few different conceptual entities.
 
-More about PHP and CodeIgniter can be found in the [CodeIgniter projects](style-php.md) section.
+More about PHP and CodeIgniter can be found in the [CodeIgniter projects](../style/php.md) section.
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

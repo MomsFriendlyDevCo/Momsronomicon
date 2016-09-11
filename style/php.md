@@ -43,9 +43,9 @@ CodeIgniter generally follows a pretty strict layout (all controllers live in `/
 	* The schema file should work immutably - i.e. must contain `DROP TABLE IF EXISTS foo;` statements to completely recreate the DB if needed
 	* The schema file should contain example INSERT statements where practical to allow another coder to quickly recreate a test environment
 	* Since everyone seems to have their own Database setup its usually a good idea to name your desktop/laptop something unique and add a rule for that name in the `/application/config/database.php` file. See an existing project for examples.
-* All third party libraries and submodules live in `/lib`. This makes it easy to manage what is part of this project and what are libraries from elsewhere. See the [Package managers](projects.md) section for more information on 3rd party libraries.
+* All third party libraries and submodules live in `/lib`. This makes it easy to manage what is part of this project and what are libraries from elsewhere. See the [Package managers](../projects.md) section for more information on 3rd party libraries.
 	* If a third party lib is to be used in the project its recommended to make a view inside `/application/views/lib` to load its CSS, JavaScript and HTML. e.g. if there is a 3rd party WYSIWYG editor make a loader for this in `/application/views/lib/wysiwyg.php` which can quickly load all its dependencies.
-	* The first place to look for 3rd party libraries is Composer (see [Package managers](projects.md)) before just cloning a 3rd party Git library into a folder.
+	* The first place to look for 3rd party libraries is Composer (see [Package managers](../projects.md)) before just cloning a 3rd party Git library into a folder.
 * JavaScript files live in `/js`, CSS files live in `/css`.
 * Normally a site has a Bootstrap based theme which can expose multiple JS and CSS files these files should *not* be modified (the theme may be updated at some later stage and your changes lost), instead create a file such as `/css/global.css` to override the CSS you may wish to alter aside from the main theme.
 * Try to use constants in place of literal strings. For example `SITE_TITLE` is useful to specify whatever the site is currently called. These should live in `/application/config/constants.php`.
@@ -167,4 +167,4 @@ Please use the standard C syntax rather than the alternate PHP syntax:
 	<? endif: ?>
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

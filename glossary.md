@@ -43,4 +43,4 @@ Glossary
 | WordPress             | CMS usually dedicated to smaller, static paged projects.
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](index.md)**

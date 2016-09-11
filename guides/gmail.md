@@ -59,4 +59,4 @@ Secured connection, using SSL: Checked
 * Send an email to [Matt](mailto:matt@mfdc.biz) with your newly setup email to confirm
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

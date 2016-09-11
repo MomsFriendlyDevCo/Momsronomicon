@@ -24,7 +24,7 @@ Misc software components:
 * [monoxide](https://github.com/hash-bang/Monoxide) - In addition to its database access functionality, Monoxide can also provide [ReST server](https://github.com/hash-bang/Monoxide#rest-server) capabilities. This is especially useful with the front-end [Angular ngResource](https://docs.angularjs.org/api/ngResource) library
 * [passport](http://passportjs.org) - User sessions and authentication
 
-More about NodeJS projects can be found in the [Backend NodeJS projects](style-node.md) section.
+More about NodeJS projects can be found in the [Backend NodeJS projects](../style/node.md) section.
 
 
 Setting up a NodeJS environment
@@ -141,7 +141,7 @@ The following global NPM packages are recommend but you will find your own prefe
 
 You should now have a working NodeJS + Mongo + Git + Gulp setup installed on your machine.
 
-Cloning a project and getting started with development can differ from project to project - you should in most cases consult its own README.md file for specific instructions. Generally though the next steps take the following form:
+Cloning a project and getting started with development can differ from project to project - you should in most cases consult its own `README.md` file for specific instructions. Generally though the next steps take the following form:
 
 	# Clone the repo
 	git clone <project GIT URL>
@@ -158,4 +158,4 @@ Cloning a project and getting started with development can differ from project t
 In most cases Gulp should now take over running the day-to-day tasks. For the majority of projects Gulp should automatically recompile scripts, CSS or other resources as you edit them - allowing you to edit the files on the fly.
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

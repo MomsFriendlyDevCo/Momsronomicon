@@ -46,4 +46,4 @@ Edit the file `~/.ssh/config` (create it if it doesn't exist) and add the entry:
 It is now possible to setup the connection by running `ssh zapp`. Change the `Host zapp` line if you wish to call the connection something else.
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

@@ -12,6 +12,6 @@ Some ideas (listed beginner to advanced):
 
 * **User management system (higher level)** - Building off the above idea of a login system is the extended concept of an admin managing user accounts. This includes the ability to list, edit, create and delete accounts as per the CRUD / BREAD methodologies listed below.
 
-See the [NodeJS Dev Stack](devstack-node.md) for information on how to set up a NodeJS environment.
+See the [NodeJS Dev Stack](../devstack/node.md) for information on how to set up a NodeJS environment.
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

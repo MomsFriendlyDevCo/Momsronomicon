@@ -13,7 +13,7 @@ The project tree breakdown is listed below. For each path an 'edit chance' is gi
 | Path                     | Edit chance | Description |
 |--------------------------|:-----------:| ------------|
 | `/`                      | Rare        | Root project directory |
-| `/app/`                  | Common      | Root Angular directory. See the [Angular](style-angular.md) chapter for more details |
+| `/app/`                  | Common      | Root Angular directory. See the [Angular](angular.md) chapter for more details |
 | `/build/`                | Never[2]    | Generated files directory |
 | `/config/`               | Rare        | Storage for all config scripts read at startup, see `/config/index.js` for default config setup. Other files are read depending on the `NODE_ENV` setting |
 | `/config/index.js`       | Never       | Base config file showing default variables subsequently overridden by each `NODE_ENV` config file |
@@ -47,6 +47,6 @@ JavaScript coding style
 * **NODE_ENV** - A server side Node script should respect `NODE_ENV=production` and act accordingly. Not only are there [significant performance related reasons](http://apmblog.dynatrace.com/2015/07/22/the-drastic-effects-of-omitting-node_env-in-your-express-js-applications) for doing this but also makes the application more predictable - e.g. nesting `gulpIf('production')` style conditions.
 
 
-See the [NodeJS Dev Stack](devstack-node.md) for information on how to set up a NodeJS environment.
+See the [NodeJS Dev Stack](../devstack/node.md) for information on how to set up a NodeJS environment.
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**

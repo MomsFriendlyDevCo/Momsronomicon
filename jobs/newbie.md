@@ -1,6 +1,8 @@
 Newbie Checklist
 ================
 
+The follwing checklist is useful when welcoming a New Dev to the company:
+
 - [ ] GitHub username + project access
 - [ ] Freedcamp access
 - [ ] Slack access
@@ -13,4 +15,4 @@ Newbie Checklist
 - [ ] Code like your life depends on it
 
 
-**[Back to Table of Contents](README.md)**
+**[Back to Table of Contents](../index.md)**
