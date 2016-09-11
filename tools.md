@@ -1,7 +1,7 @@
 Tools
 =====
 > The easiest method to compute newbie programmer specific hash is to sit them in front of VI and ask them to quit.
-> - MC, The author
+> - MC, The totally-biased author of this guide
 
 Design tools
 ------------
@@ -17,12 +17,37 @@ Editors
 > I use emacs, which might be thought of as a thermonuclear word processor. It was created by Richard Stallman; enough said. It is written in Lisp, which is the only computer language that is beautiful. It is colossal, and yet it only edits straight ASCII text files, which is to say, no fonts, no boldface, no underlining. In other words, the engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text
 > - Neil Stephenson (In the beginning was the command line)
 
+
+The following sections list code editors sorted from most popular to least by the Devs at MFDC:
+
+
+### [Atom](https://github.com/atom/atom)
+
+Recommended packages (all available from the `Preferences > Packages` UI:
+
+* [Triple-Folds](https://atom.io/packages/triple-folds) package to get code folding working
+
+As Atom is client-side only you may be interested in [remote mounting with SSH] to edit text on machines other than your own, like servers.
+
+
+
+### VI / VIM
+
 > Vi is a subset of evil
 > - Anon.
 
-Despite any fancy pre-conceived notions there are only two text editors - [Emacs](https://www.gnu.org/software/emacs) and [Vi](http://www.vim.org). All other editors are shallow copies of one of these two - usually implementing less features. These editors pre-date the internet and as such have 
+MC's preferred editor of choice. It may not have been designed by the Devil but evil thoughts are certainly at the forefront of the mind of any who begin to use it. Needless to say that VI* is a **very** difficult editor to master, its difficult matched by its **power**.
 
-Thats not to say that other editors such as [Notepad++](http://www.notepad-plus-plus.org), [TextPad](http://www.textpad.com/), [Sublime Text](http://www.sublimetext.com) or the new hip-and-trendy [Atom](https://github.com/atom/atom) are necessarily bad, just that they more-or-less duplicate the functionality of either Emacs or Vi and in most ways not to the full degree.
+VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
+
+
+### Other choices
+
+* [Notepad++](http://www.notepad-plus-plus.org) (Win)
+* [TextPad](http://www.textpad.com/) (Win)
+* [Sublime Text](http://www.sublimetext.com) (Win, Mac)
+
+
 
 
 Version control - Git
