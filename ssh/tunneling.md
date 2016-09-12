@@ -8,6 +8,8 @@ The basic process of tunneling is:
 2. The connection formed is a normal SSH session but with reverse tunneling enabled - i.e. form a connection *back* from the shared server to your own laptop
 3. The person wishing to connect to your PC connects to the shared server then dials though it into your PC
 
+**NOTE**: There is a easier (yet slower and temporary) method to setup SSH tunnels to share sessions via [Teleconsole](https://github.com/gravitational/teleconsole).
+
 
 Setting up the credentials
 --------------------------
