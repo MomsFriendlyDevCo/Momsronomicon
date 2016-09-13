@@ -25,7 +25,7 @@ As Atom is client-side only you may be interested in [remote mounting with SSH] 
 > Vi is a subset of evil
 > - Anon.
 
-MC's preferred editor of choice. It may not have been designed by the Devil but evil thoughts are certainly at the forefront of the mind of any who begin to use it. Needless to say that VI* is a **very** difficult editor to master, its difficult matched by its **power**.
+MC's preferred editor of choice. It may not have been designed by the Devil but evil thoughts are certainly at the forefront of the mind of any who begin to use it. Needless to say that VI* is a **very** difficult editor to master, its difficulty matched by its power.
 
 VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
 
