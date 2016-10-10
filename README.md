@@ -24,6 +24,7 @@ Table of contents
 	3. [Versioning](tools/versioning.md)
 5. [Hosting](hosting/)
 	1. [DigitalOcean / VMs](hosting/do.md)
+	2. [Hosting Node Environments](hosting/node.md)
 6. [Job Roles](jobs/)
 	1. [Interviewing](jobs/interviews.md)
 	2. [Newbie guide](jobs/newbie.md)
