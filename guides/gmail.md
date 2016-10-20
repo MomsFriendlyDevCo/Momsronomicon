@@ -17,7 +17,7 @@ To send **outgoing** email you need to complete the following steps:
 
 * Click the cog button in the top right then click `Settings`
 
-![Cog button](img/gmail/01-cog.png)
+![Cog button](../img/gmail/01-cog.png)
 
 
 * Select the `Accounts and Import` tab
@@ -28,7 +28,7 @@ To send **outgoing** email you need to complete the following steps:
 
 * Complete your name and enter your email address (usually `your-first-name@mfdc.biz`)
 
-![Basic email details window](img/gmail/02-email.png)
+![Basic email details window](../img/gmail/02-email.png)
 
 
 * Enter the following details (these details are the same for everyone with no alterations):
@@ -41,7 +41,7 @@ Password: **Someone should tell you this**
 Secured connection, using SSL: Checked
 ```
 
-![SMTP details](img/gmail/03-smtp.png)
+![SMTP details](../img/gmail/03-smtp.png)
 
 
 * Click `Add account`
@@ -49,7 +49,7 @@ Secured connection, using SSL: Checked
 
 * Close the window. You do not need to enter a verification code.
 
-![Confirm window](img/gmail/04-confirm.png)
+![Confirm window](../img/gmail/04-confirm.png)
 
 
 * You will shortly receive an email address from Gmail asking you to confirm. Click the link in that email to finish the process.
