@@ -15,8 +15,18 @@ Project: [The Atom Editor](https://github.com/atom/atom)
 Recommended packages (all available from the `Preferences > Packages` UI:
 
 * [Triple-Folds](https://atom.io/packages/triple-folds) package to get code folding working
+* [atom-sublime-select](https://atom.io/packages/sublime-style-column-selection) package to enable vertical editing (Refer to package for OS controls)
 
 As Atom is client-side only you may be interested in [remote mounting with SSH] to edit text on machines other than your own, like servers.
+
+Note: Atom uses soft tabs (ie two spaces) by default, with MFDC being a tabs friendly company this raises a few problems...
+
+To turn it off, navigate to settings:
+Edit -> Preferences
+
+1. Uncheck 'Soft Wrap At Preffered Line Length'
+2. Change Tab Type to Hard
+  
 
 
 
