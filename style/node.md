@@ -49,4 +49,7 @@ JavaScript coding style
 
 See the [NodeJS Dev Stack](../devstack/node.md) for information on how to set up a NodeJS environment.
 
+For common issues with Node see the [Common Errors Guide](../guides/errors.md).
+
+
 **[Back to Table of Contents](../README.md)**
