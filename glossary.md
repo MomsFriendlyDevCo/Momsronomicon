@@ -20,6 +20,7 @@ Glossary
 | ERD                   | Entity Relationship Diagram. A typical diagram showing the layout of a relational database structure
 | Git                   | A package management system. Known for being developed by Linus Torvalds and its excessive use of tree diagrams in its documentation.
 | GitHub                | Website specializing in the storage of Git Repos
+| Grok                  | To understand an issue inside and out ([source](http://catb.org/jargon/html/G/grok.html))
 | HLL                   | Higher-level-language. Any modern programming language such as PHP or JavaScript
 | Index                 | In database terms, the ability for a field to be quickly retrieved. Primary keys are always indexed.
 | JavaScript            | Client side interpreted programming language. Often compared to a 5th level Higher-Level-Language (HLL)
