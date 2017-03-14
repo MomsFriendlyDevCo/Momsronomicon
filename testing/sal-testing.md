@@ -9,24 +9,24 @@ The SAL Testing Process is a collection of test patterns and procedures MFDC has
 
 The SAL Testing Process is as follows:
 
-**LEVEL 1: DEVELOPLEMT TESTING**
+**LEVEL 1: DEVELOPMENT TESTING**
 * During the development of a feature/module
 * Manual UI component testing (e.g. testing dropdowns, CRUD operations, app routing functionality, expected output, etc.)
 * Automated testing (e.g. unit tests, e2e tests) SHOULD be implemented AT LEAST for mission critical or highly complex features/modules
 * Conducted by the DEVELOPER
 
 **LEVEL 2: COMMIT TESTING**
-* Upon commiting a feature/module to the project version control system - i.e. Git
+* Upon committing a feature/module to the project version control system - i.e. Git
 * Manual user flow testing (e.g. user login: start from app root path `/` -> go to login page -> login -> follow redirect, etc.)
 * Any available automated tests MUST be run
 * Dealing with defects (as detected by manual or automated testing):
 	1. The assigned developer for the feature/module makes the necessary changes to address the issue (if defect detected in already committed code, new commit message addressing it MUST be prefixed with `BUGFIX: `)
 	2. Level 1 testing for item being addressed
-	3. Once the bugfix is commited, level 2 testing is engaged and repeated until item successfully passes level 2 testing
+	3. Once the bugfix is committed, level 2 testing is engaged and repeated until item successfully passes level 2 testing
 * Conducted by the DEVELOPER OR BA/QA team
 
 **LEVEL 3: MILESTONE (PRE-RELEASE) TESTING**
-* Upon delivery of system build milestone, e.g: System Build (Alpha) and System Build (Beta)
+* Upon delivery of system build milestone, e.g. System Build (Alpha) and System Build (Beta)
 * Manual user flow testing of each deliverable / module
 * Milestone testing MUST be conducted against an INTERNAL test plan / UAT document
 * Every testable item specified in the test plan / UAT MUST be assigned a status of either: 'PASS', 'FAIL', or 'CLARIFICATION'
