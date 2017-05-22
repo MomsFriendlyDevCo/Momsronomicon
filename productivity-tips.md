@@ -5,8 +5,8 @@ Productivity Tips
 Following tips are heavily inspired from [Edmond Lau's 2015 Google Talk on "The Effective Engineer"](https://www.youtube.com/watch?v=BnIz7H5ruy0).
 
 1. **Optimise for learning**
-	* In order to 'keep pace' with the IT industry it is crucial you make a good habit learning and being able to process new information, which may supersede old knowledge.
-	* Learning can be an exponential, compound experience, IF you make it that way.
+	* In order to 'keep pace' with the IT industry it is crucial you make a good habit of learning and being able to process new information, which may supersede old knowledge.
+	* Learning can be an exponential, compound experience IF you make it that way.
 	* Dedicate portions of your day / week to learning / self-teaching.
 
 2. **Invest in iteration speed**
@@ -16,7 +16,7 @@ Following tips are heavily inspired from [Edmond Lau's 2015 Google Talk on "The 
 
 3. **Validate your ideas aggressively and iteratively**
 	* Do this with simple, testable hypotheses.
-	* Validating ideas -- be it a high or low level in the product or project -- can save you a lot of pain down the track. You may have a fantastic, performant feature or product, but if no one wants it or uses it, could your effort and time have been channelled into something more fruitful?
+	* Validating ideas -- whether at a high or low level in the product or project -- can save you a lot of pain down the track. You may have a fantastic, performant feature or product, but if no one wants it or uses it, could your effort and time have been channelled into something more fruitful?
 
 4. **Minimise operational burden**
 	* A common problem is that we spend so much time maintaining our software that we don't really have time to build new things.
