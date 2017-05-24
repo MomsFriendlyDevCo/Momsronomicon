@@ -40,6 +40,37 @@ MC's preferred editor of choice. It may not have been designed by the Devil but 
 VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
 
 
+### Vistual Studio
+
+**Recommended config** - either edit `~/.config/Code/User/settings.json` to access the editor settings or press `Ctrl + ,` while its open.
+
+```
+// Remove trailing auto inserted whitespace
+"editor.trimAutoWhitespace": true,
+
+// When enabled, will trim trailing whitespace when saving a file.
+"files.trimTrailingWhitespace": true,
+
+// Show excessive whitespace
+"editor.renderWhitespace": "boundary",
+
+// Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+"editor.insertSpaces": false,
+
+// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+"editor.detectIndentation": false,
+
+// Controls whether the editor should render control characters
+"editor.renderControlCharacters": true,
+
+// Controls whether the editor should render indent guides
+"editor.renderIndentGuides": true,
+
+// Set tab display to 4 characters
+"editor.tabSize": 4,
+```
+
+
 ### Other choices
 
 * [Notepad++](http://www.notepad-plus-plus.org) (Win)
