@@ -8,8 +8,8 @@ Editors
 The following sections list code editors sorted from most popular to least by the Devs at MFDC:
 
 
-Atom
-----
+### Atom
+
 Project: [The Atom Editor](https://github.com/atom/atom)
 
 Recommended packages (all available from the `Preferences > Packages` UI:
@@ -26,9 +26,6 @@ Edit -> Preferences
 
 1. Uncheck 'Soft Wrap At Preffered Line Length'
 2. Change Tab Type to Hard
-  
-
-
 
 ### VI / VIM
 
@@ -39,6 +36,32 @@ MC's preferred editor of choice. It may not have been designed by the Devil but 
 
 VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
 
+### Visual Studio Code
+
+Project: [Microsoft Visual Studio Code](https://github.com/Microsoft/vscode)
+
+Features & Quickstart:
+* Terminal built in (Linux: ctrl + `)
+* GUI for git changes (Side by side)
+* Excellent Search Functionality, automatically excludes node_modules
+* Side by Side editing
+
+Cons
+* Cant open multiple project folders at once (need to switch using folders)
+* No custom folding (TO DO!)
+
+Recommended Extensions (all available from the extension tab):
+
+* ES-Lint
+* vscode-icons (makes it pretty)
+* Git Blame
+
+Microsoft have actually turned out a good IDE which runs on all platforms.
+
+Note: Like Atom, VS Code uses spaces by default, To turn it off, add the following to the `setting.json` file:
+File -> Preferences -> Settings
+
+> "editor.insertSpaces": false
 
 ### Vistual Studio
 
