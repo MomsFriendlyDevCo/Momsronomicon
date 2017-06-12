@@ -28,17 +28,20 @@ To send **outgoing** email you need to complete the following steps:
 
 * Complete your name and enter your email address (usually `your-first-name@mfdc.biz`)
 
+
+* Note: You may uncheck “Treat as an alias” if you wish, for more info see this [link](https://support.google.com/mail/bin/answer.py?ctx=gmail&answer=1710338&hl=en&authuser=0)
+
 ![Basic email details window](../img/gmail/02-email.png)
 
 
 * Enter the following details (these details are the same for everyone with no alterations):
 
 ```
-SMTP Server: mfdc.biz
-Port: 465
-Username: smtp@mfdc.biz (NOTE: THIS IS NOT YOUR EMAIL ADDRESS!)
+SMTP Server: smtp.mailgun.org
+Port: 587
+Username: postmaster@mfdc.biz (NOTE: THIS IS NOT YOUR EMAIL ADDRESS!)
 Password: **Someone should tell you this**
-Secured connection, using SSL: Checked
+Secured connection, using TLS: Checked
 ```
 
 ![SMTP details](../img/gmail/03-smtp.png)
