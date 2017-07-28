@@ -52,7 +52,7 @@ Setting up Node on Linux is a relatively straight forward affair since Linux is 
 
 **Install NodeJS PPA via Node Source**
 
-	curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+	curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 
 **Actually install NodeJS + MongoDB + Git on your system**
