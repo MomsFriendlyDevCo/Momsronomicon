@@ -158,4 +158,32 @@ Cloning a project and getting started with development can differ from project t
 In most cases Gulp should now take over running the day-to-day tasks. For the majority of projects Gulp should automatically recompile scripts, CSS or other resources as you edit them - allowing you to edit the files on the fly.
 
 
+**Setting up a custom development config**
+
+Its a good idea to think of an individual, unique name for your development environment / laptop / desktop PC so you can customize how it works between projects.
+
+1. Set the `NODE_ENV` environment variable - The easiest method to do this is to edit the `~/.bashrc` file and add the line `NODE_ENV=xxx` at the very bottom then close and reopen your terminal.
+2. Create your own config file - All MFDC projects have a folder called `config`. By default just the `config/index.js` file is loaded but if the server finds a file matching your `NODE_ENV` name it will be loaded _after_, overriding any settings in the main config.
+
+An example unique config for your own machine that changes the default port to `9000` (instead of the default `8080`) would be something like this file which should be placed in `config/xxx.js` (change `xxx` to your own environment name):
+
+```javascript
+// XXX's development rig
+module.exports = {
+	port: 9000,
+};
+```
+
+
+**Using anything except 'localhost'**
+
+Initially using http://localhost (or http://127.0.0.1) can be useful to refer to a development machine. Over time though its a good idea to unify how you refer to your environment by using the same name (see the previous section).
+
+1. Edit hosts (Linux + Mac) - Edit the `/etc/hosts` file on your system. The easiest method to do this is by running `sudo nano /etc/hosts` 
+1. Edit hosts (Windows) - Type `notepad` into the start menu and right click on the found item _while holding shift_. Select the option 'Run as Administrator'. Click Open and enter the filename `c:\windows\system32\drivers\etc\hosts`
+2. Add your own host name(s) - Go to the bottom of the first section of numbers and add the line `127.0.0.1 XXX` (where `XXX` is your environment name). You can add as many names or subdomains here as needed
+3. Exit and save the file (If you're using Nano it's Ctrl+X)
+4. Open your development machine in your browser by navigating to the site `http://XXX`
+
+
 **[Back to Table of Contents](../README.md)**
