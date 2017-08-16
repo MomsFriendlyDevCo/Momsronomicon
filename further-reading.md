@@ -6,8 +6,8 @@ MFDC usually has all of the book recommendations in both PDF and dead-tree forma
 Interviewing
 ------------
 
-* [InterviewThis](https://github.com/ChiperSoft/InterviewThis/blob/master/InterviewThis.md) - Generic dev questions
-* [Front end Developer Interview Questions](https://github.com/h5bp/Front end Developer Interview Questions) - Questions specific to front-end dev work such as Angular work
+* [InterviewThis](https://github.com/ChiperSoft/InterviewThis/blob/master/README.md) - Generic dev questions for interviewees
+* [Front end Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions) - Questions specific to front-end dev work such as Angular work
 
 
 PHP
