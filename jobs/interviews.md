@@ -73,7 +73,7 @@ If the interviewee answers 'yes' to any of the following questions, it might not
 * Have you obtained a Microsoft Certification and if so did you pay for it yourself?
 
 
-Other useful questions or interview techniques can be found in [Further reading](../futher-reading.md).
+Other useful questions or interview techniques can be found in [Further reading](../further-reading.md).
 
 
 **[Back to Table of Contents](../README.md)**
