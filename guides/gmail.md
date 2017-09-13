@@ -39,7 +39,7 @@ To send **outgoing** email you need to complete the following steps:
 ```
 SMTP Server: smtp.mailgun.org
 Port: 587
-Username: postmaster@mfdc.biz (NOTE: THIS IS NOT YOUR EMAIL ADDRESS!)
+Username: **Someone should tell you this**
 Password: **Someone should tell you this**
 Secured connection, using TLS: Checked
 ```
