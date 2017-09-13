@@ -29,7 +29,6 @@ Table of contents
 7. [Job Roles](jobs/)
 	1. [Interviewing](jobs/interviews.md)
 	2. [Newbie guide](jobs/newbie.md)
-	3. [Getting started](jobs/getting-started.md)
 8. [Deploying a project](deployment.md)
 9. [Managing clients](clients.md)
 10. [Productivity Tips](productivity-tips.md)
