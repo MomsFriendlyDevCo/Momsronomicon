@@ -28,7 +28,7 @@ Table of contents
 	2. [Hosting Node Environments](hosting/node.md)
 7. [Job Roles](jobs/)
 	1. [Interviewing](jobs/interviews.md)
-	2. [Newbie guide](jobs/newbie.md)
+	2. [Onboarding](jobs/onboarding.md)
 8. [Deploying a project](deployment.md)
 9. [Managing clients](clients.md)
 10. [Productivity Tips](productivity-tips.md)
