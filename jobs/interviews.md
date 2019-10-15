@@ -13,32 +13,34 @@ Job description
 ---------------
 A general use job description suitable for web-devs.
 
-	Due to an upswing in projects we are seeking a coder with light to
-	expert level experience of NodeJS and/or front-end frameworks
-	(specifically ExpressJS and AngularJS frameworks respectively). Other
-	skills such as database knowledge or general *nix experience are desirable
-	but non-essential if the candidate is willing to learn new skills.
+```
+Due to an upswing in projects we are seeking a coder with light to
+expert level experience of NodeJS and/or front-end frameworks
+(specifically Vue, AngularJS and ExpressJS frameworks respectively). Other
+skills such as database knowledge or general *nix experience are desirable
+but non-essential if the candidate is willing to learn new skills.
 
 
-	Essential skill set:
-	* Intermediate written English skills
-	* NodeJS programming experience OR front-end JavaScript in general
-	* Basic experience with MVC systems or other structured framework models
-	* HTML, CSS and JavaScript experience
-	* Front-end framework knowledge - jQuery, Angular, Ember, Backbone or similar
+Essential skill set:
+* Intermediate written English skills
+* NodeJS programming experience OR front-end JavaScript in general
+* Basic experience with MVC systems or other structured framework models
+* HTML, CSS and JavaScript experience
+* Front-end framework knowledge - jQuery, Angular, Vue, Ember, Backbone or similar
 
 
-	Desirable skills:
-	* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
-	* Some experience of a back-end MVC framework - e.g. ExpressJS, Sails, CodeIgniter CakePHP, Laravel or equivalent 
-	* Some database knowledge - Mongo, MySQL, Redis or similar
-	* Experience of a frontend design framework (ideally Bootstrap)
-	* Experience of a frontend framework stack (ideally Angular)
-	* Experience with HTML5 + mobile app frameworks - e.g. jQuery Mobile, Sencha, Ratchet etc.
-	* *nix knowledge is considered a definite plus
-	* Familiarity with inline documentation systems - specicially JSDoc, PHPDoc
-	* General networking knowledge
-	* Extra skills that may be useful: BASH coding, general *nix console usage
+Desirable skills:
+* Ability to both write new code and maintain existing code-bases using a source control system - specifically Git
+* Some experience of a back-end MVC framework - e.g. ExpressJS, Sails, CodeIgniter CakePHP, Laravel or equivalent
+* Some database knowledge - Mongo, MySQL, Redis or similar
+* Experience of a frontend design framework (ideally Bootstrap)
+* Experience of a frontend framework stack (ideally Angular and/or Vue)
+* Experience with HTML5 + mobile app frameworks - e.g. jQuery Mobile, Sencha, Ratchet, Cordova etc.
+* *nix knowledge is considered a definite plus
+* Familiarity with inline documentation systems - specicially JSDoc, PHPDoc
+* General networking knowledge
+* Extra skills that may be useful: BASH coding, general *nix console usage
+```
 
 
 Past projects
