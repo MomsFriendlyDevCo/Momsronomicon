@@ -6,8 +6,6 @@ Interviewing Devs
 Alternate title for this section: "How to tell if a potential developer really knows what he is doing".
 This section is intended as a rough guide to the dev skills we are looking for.
 
-You may also find the [Starter projects](../getting-started.md) section useful as it also provides some sample projects to give to potential employees.
-
 
 Job description
 ---------------
@@ -68,14 +66,10 @@ The following phrases should set off alarms:
 If the interviewee answers 'yes' to any of the following questions, it might not be a good idea to continue the interview (all of these are examples of prior interviews):
 
 * Do you think JavaScript and jQuery are the same thing?
-* Have you ever named a function starting with "my", or your own name?
-* Do you think VCS commit messages are optional?
-* Have you ever written try/catch with an empty catch block?
+* How do you approch versioning system commit messages?
+* How to do you approch error catching within a project?
 * Have you ever written a CMS entirely with PL/SQL?
 * Have you obtained a Microsoft Certification and if so did you pay for it yourself?
-
-
-Other useful questions or interview techniques can be found in [Further reading](../further-reading.md).
 
 
 **[Back to Table of Contents](../README.md)**
