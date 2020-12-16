@@ -47,11 +47,11 @@ Features & Quickstart:
 * Side by Side editing
 
 Cons
-* Cant open multiple project folders at once (need to switch using folders)
-* No custom folding (TO DO!)
+* Can at times be opinionated when dealing with linting/formatting configuration
 
 Recommended Extensions (all available from the extension tab):
 
+* Vetur
 * ES-Lint
 * vscode-icons (makes it pretty)
 * Git Blame
@@ -62,6 +62,36 @@ Note: Like Atom, VS Code uses spaces by default, To turn it off, add the followi
 File -> Preferences -> Settings
 
 > "editor.insertSpaces": false
+
+#### Vetur
+
+Note: When dealing with `*.doop` files (although they can be associated with "Vue") Vetur is unable to default the language for `<script>` tags without the additional `lang="js"` attribute being defined.
+
+Example configuration:
+
+```
+{
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline"
+        },
+        "prettyhtml": {
+            "printWidth": 100,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
+    "files.associations": {
+        "*.doop": "vue"
+    },
+    "vetur.grammar.customBlocks": {
+    },
+    "vetur.format.options.useTabs": true,
+    "vetur.format.options.tabSize": 4,
+    "editor.insertSpaces": false
+}
+```
 
 ### Vistual Studio
 
