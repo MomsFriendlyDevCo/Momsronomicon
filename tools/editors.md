@@ -8,6 +8,108 @@ Editors
 The following sections list code editors sorted from most popular to least by the Devs at MFDC:
 
 
+### Visual Studio Code
+
+[Download](https://code.visualstudio.com/)
+
+Features:
+
+* Terminal built in
+* GUI for git changes (Side by side)
+* Excellent Search Functionality, automatically excludes node_modules
+* Side by Side editing
+
+Cons:
+
+* Can at times be opinionated when dealing with linting/formatting configuration
+
+Recommended Extensions (all available from the extension tab):
+
+* Vetur
+* ES-Lint
+* vscode-icons (makes it pretty)
+* Git Blame
+
+
+**Setting up VSC for Doop projects**:
+
+1. Press `Ctrl + ,` and click the `Open Settings (JSON)` in the top right of the screen.
+
+Paste the following sample setup:
+
+```
+{
+    // Remove trailing auto inserted whitespace
+    "editor.trimAutoWhitespace": true,
+
+    // When enabled, will trim trailing whitespace when saving a file.
+    "files.trimTrailingWhitespace": true,
+
+    // Show excessive whitespace
+    "editor.renderWhitespace": "boundary",
+
+    // Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+    "editor.insertSpaces": false,
+
+    // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+    "editor.detectIndentation": false,
+
+    // Controls whether the editor should render control characters
+    "editor.renderControlCharacters": true,
+
+    // Controls whether the editor should render indent guides
+    "editor.renderIndentGuides": true,
+
+    // Set tab display to 4 characters
+	"editor.tabSize": 4,
+
+	// Override custom file formats
+	"files.associations": {
+        "*.doop": "vue"
+    },
+
+	// Vetur settings
+	"vetur.experimental.templateInterpolationService": false,
+	"vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force-expand-multiline"
+        },
+        "prettyhtml": {
+            "printWidth": 100,
+            "singleQuote": false,
+            "wrapAttributes": false,
+            "sortAttributes": false
+        }
+    },
+    "vetur.grammar.customBlocks": {
+        "component": "js",
+        "directive": "js",
+        "endpoint": "js",
+        "filter": "js",
+        "macgyver": "js",
+        "schema": "js",
+        "server": "js",
+        "service": "js"
+    },
+    "vetur.format.options.useTabs": true,
+    "vetur.format.options.tabSize": 4
+}
+```
+
+2. Press `Ctrl + Shift + P` and type `>vetur generate`, press enter.
+3. Restart VSCode (Exit and rerun)
+
+
+### VI / VIM
+
+> Vi is a subset of evil
+> - Anon.
+
+MC's preferred editor of choice. It may not have been designed by the Devil but evil thoughts are certainly at the forefront of the mind of any who begin to use it. Needless to say that VI* is a **very** difficult editor to master, its difficulty matched by its power.
+
+VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
+
+
 ### Atom
 
 Project: [The Atom Editor](https://github.com/atom/atom)
@@ -27,101 +129,7 @@ Edit -> Preferences
 1. Uncheck 'Soft Wrap At Preffered Line Length'
 2. Change Tab Type to Hard
 
-### VI / VIM
 
-> Vi is a subset of evil
-> - Anon.
-
-MC's preferred editor of choice. It may not have been designed by the Devil but evil thoughts are certainly at the forefront of the mind of any who begin to use it. Needless to say that VI* is a **very** difficult editor to master, its difficulty matched by its power.
-
-VI has the added advantage that it is part of the standard set of Unix editors and can always be found on any server without any additional tools.
-
-### Visual Studio Code
-
-Project: [Microsoft Visual Studio Code](https://github.com/Microsoft/vscode)
-
-Features & Quickstart:
-* Terminal built in (Linux: ctrl + `)
-* GUI for git changes (Side by side)
-* Excellent Search Functionality, automatically excludes node_modules
-* Side by Side editing
-
-Cons
-* Can at times be opinionated when dealing with linting/formatting configuration
-
-Recommended Extensions (all available from the extension tab):
-
-* Vetur
-* ES-Lint
-* vscode-icons (makes it pretty)
-* Git Blame
-
-Microsoft have actually turned out a good IDE which runs on all platforms.
-
-Note: Like Atom, VS Code uses spaces by default, To turn it off, add the following to the `setting.json` file:
-File -> Preferences -> Settings
-
-> "editor.insertSpaces": false
-
-#### Vetur
-
-Note: When dealing with `*.doop` files (although they can be associated with "Vue") Vetur is unable to default the language for `<script>` tags without the additional `lang="js"` attribute being defined.
-
-Example configuration:
-
-```
-{
-    "vetur.format.defaultFormatterOptions": {
-        "js-beautify-html": {
-            "wrap_attributes": "force-expand-multiline"
-        },
-        "prettyhtml": {
-            "printWidth": 100,
-            "singleQuote": false,
-            "wrapAttributes": false,
-            "sortAttributes": false
-        }
-    },
-    "files.associations": {
-        "*.doop": "vue"
-    },
-    "vetur.grammar.customBlocks": {
-    },
-    "vetur.format.options.useTabs": true,
-    "vetur.format.options.tabSize": 4,
-    "editor.insertSpaces": false
-}
-```
-
-### Vistual Studio
-
-**Recommended config** - either edit `~/.config/Code/User/settings.json` to access the editor settings or press `Ctrl + ,` while its open.
-
-```
-// Remove trailing auto inserted whitespace
-"editor.trimAutoWhitespace": true,
-
-// When enabled, will trim trailing whitespace when saving a file.
-"files.trimTrailingWhitespace": true,
-
-// Show excessive whitespace
-"editor.renderWhitespace": "boundary",
-
-// Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-"editor.insertSpaces": false,
-
-// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
-"editor.detectIndentation": false,
-
-// Controls whether the editor should render control characters
-"editor.renderControlCharacters": true,
-
-// Controls whether the editor should render indent guides
-"editor.renderIndentGuides": true,
-
-// Set tab display to 4 characters
-"editor.tabSize": 4,
-```
 
 
 ### Other choices
