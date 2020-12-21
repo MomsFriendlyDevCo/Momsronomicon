@@ -33,9 +33,8 @@ Recommended Extensions (all available from the extension tab):
 
 **Setting up VSC for Doop projects**:
 
-1. Press `Ctrl + ,` and click the `Open Settings (JSON)` in the top right of the screen.
-
-Paste the following sample setup:
+1. Install The Vetur plugin - Click the cog in the bottom left > Extensions > Search for `Vetur` > Install
+2. Open settings (press `Ctrl + ,` and click the `Open Settings (JSON)` in the top right of the screen) and paste the following sample setup:
 
 ```
 {
@@ -96,8 +95,8 @@ Paste the following sample setup:
 }
 ```
 
-2. Press `Ctrl + Shift + P` and type `>vetur generate`, press enter.
-3. Restart VSCode (Exit and rerun)
+3. Press `Ctrl + Shift + P` and type `>vetur generate`, press enter.
+4. Restart VSCode (Exit and rerun)
 
 
 ### VI / VIM
