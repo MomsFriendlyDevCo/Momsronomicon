@@ -25,10 +25,11 @@ Cons:
 
 Recommended Extensions (all available from the extension tab):
 
-* Vetur
-* ES-Lint
-* vscode-icons (makes it pretty)
-* Git Blame
+* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* [ES-Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) or [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) (makes it pretty)
+* [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+* [Wakatime for VSCode](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)
 
 
 **Setting up VSC for Doop projects**:
