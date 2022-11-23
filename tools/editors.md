@@ -57,20 +57,18 @@ Recommended Extensions (all available from the extension tab):
     // Controls whether the editor should render control characters
     "editor.renderControlCharacters": true,
 
-    // Controls whether the editor should render indent guides
-    "editor.renderIndentGuides": true,
-
     // Set tab display to 4 characters
-	"editor.tabSize": 4,
+    "editor.tabSize": 4,
 
-	// Override custom file formats
-	"files.associations": {
-        "*.doop": "vue"
+    // Override custom file formats
+    "files.associations": {
+        "*.doop": "vue",
+        "*.ng": "html"
     },
 
-	// Vetur settings
-	"vetur.experimental.templateInterpolationService": false,
-	"vetur.format.defaultFormatterOptions": {
+    // Vetur settings
+    "vetur.experimental.templateInterpolationService": false,
+    "vetur.format.defaultFormatterOptions": {
         "js-beautify-html": {
             "wrap_attributes": "force-expand-multiline"
         },
@@ -81,10 +79,11 @@ Recommended Extensions (all available from the extension tab):
             "sortAttributes": false
         }
     },
+    // Doop2 tags
     "vetur.grammar.customBlocks": {
+        "endpoint": "js",
         "component": "js",
         "directive": "js",
-        "endpoint": "js",
         "filter": "js",
         "macgyver": "js",
         "schema": "js",
@@ -92,7 +91,22 @@ Recommended Extensions (all available from the extension tab):
         "service": "js"
     },
     "vetur.format.options.useTabs": true,
-    "vetur.format.options.tabSize": 4
+    "vetur.format.options.tabSize": 4,
+
+    // Optional:
+
+    // Disabled due to false positives and lag
+    "javascript.suggest.autoImports": false,
+    // Disabled as requires TypeScript 3.4
+    "javascript.preferences.useAliasesForRenames": false,
+    // Disabled TypeScript validation
+    "typescript.validate.enable": false,
+    // Disabled TypeScript formatter
+    "typescript.format.enable": false,
+    // Disabled validation of <template> blocks with TypeScript language service
+    "vetur.validation.interpolation": false,
+    // Privacy
+    "telemetry.telemetryLevel": "off"
 }
 ```
 
