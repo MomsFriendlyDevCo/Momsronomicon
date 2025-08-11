@@ -4,7 +4,7 @@ At MFDC we encourage the use of your usual email service to receive email - we d
 
 This guide is a walkthrough to setup your MFDC email with Gmail.
 
-Your **incoming** email should already have been set up by one of the team. This means any email addressed to `your-first-name@mfdc.biz` should end up wherever you usually receive email.
+Your **incoming** email should already have been set up by one of the team. This means any email addressed to `name@mfdc.io` should end up wherever you usually receive email.
 
 
 Outgoing email setup
@@ -26,7 +26,7 @@ To send **outgoing** email you need to complete the following steps:
 * Under 'Send mail as' click 'Add another email address that you own'
 
 
-* Complete your name and enter your email address (usually `your-first-name@mfdc.biz`)
+* Complete your name and enter your email address (usually `name@mfdc.io`)
 
 
 * Note: You may uncheck “Treat as an alias” if you wish, for more info see this [link](https://support.google.com/mail/bin/answer.py?ctx=gmail&answer=1710338&hl=en&authuser=0)
@@ -37,7 +37,7 @@ To send **outgoing** email you need to complete the following steps:
 * Enter the following details (these details are the same for everyone with no alterations):
 
 ```
-SMTP Server: smtp.mailgun.org
+SMTP Server: smtp.mailersend.net
 Port: 587
 Username: **Someone should tell you this**
 Password: **Someone should tell you this**
@@ -59,7 +59,7 @@ Secured connection, using TLS: Checked
 
 * **(Optional)** Under the `Accounts and Import` screen set the outgoing email address to default if you prefer
 
-* Send an email to [Matt](mailto:matt@mfdc.biz) with your newly setup email to confirm
+* Send an email to [Matt](mailto:matt@mfdc.io) with your newly setup email to confirm
 
 
 **[Back to Table of Contents](../README.md)**
